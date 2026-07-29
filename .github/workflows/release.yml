@@ -17,11 +17,9 @@ jobs:
         with:
           go-version: "1.26"
 
-      - name: Build (Apple Silicon)
+      - name: Build
         run: make build
         env:
-          GOARCH: arm64
-          GOOS: darwin
           CGO_ENABLED: "1"
 
       - name: Run tests
@@ -29,14 +27,15 @@ jobs:
         env:
           CGO_ENABLED: "1"
 
-      - name: Package
+      - name: Create DMG
         run: |
-          cd bin
-          zip -r Wach.app.zip Wach.app
-          cd ..
+          hdiutil create -volname "Wach" \
+            -srcfolder bin/Wach.app \
+            -ov -format UDZO \
+            bin/Wach.dmg
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          files: bin/Wach.app.zip
+          files: bin/Wach.dmg
           generate_release_notes: true

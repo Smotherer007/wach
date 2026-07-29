@@ -31,7 +31,7 @@ Every 10 seconds, Wach checks the system idle time using the CoreGraphics API. I
 
 ### Download
 
-Download the latest `Wach.app.zip` from the [Releases](https://github.com/Smotherer007/wach/releases) page, unzip it, and move `Wach.app` to your Applications folder.
+Download the latest `Wach.dmg` from the [Releases](https://github.com/Smotherer007/wach/releases) page, open it, and drag `Wach.app` into your Applications folder.
 
 ### Build from source
 
