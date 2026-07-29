@@ -196,6 +196,15 @@ func (w *Wach) run() {
 	movePixel := w.config.MovePixels
 	idleThreshold := w.config.IdleThreshold
 
+	// Prevent the system from sleeping while wach is active
+	assertionID := createWakeAssertion("Wach keeps your Mac awake")
+	if assertionID != 0 {
+		logger.Info("system-schlaf-assertion aktiv — rechner bleibt wach")
+	} else {
+		logger.Warn("konnte schlaf-assertion nicht erstellen")
+	}
+	defer releaseWakeAssertion(assertionID)
+
 	w.state.setLastMoved(time.Now())
 	logger.Infof("wach gestartet — check alle %v, idle nach %v, bewege um %dpx",
 		w.config.CheckInterval, idleThreshold, movePixel)

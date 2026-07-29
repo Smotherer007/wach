@@ -6,6 +6,7 @@ package wach
 #include <CoreGraphics/CoreGraphics.h>
 #include <IOKit/ps/IOPowerSources.h>
 #include <IOKit/ps/IOPSKeys.h>
+#include <IOKit/pwr_mgt/IOPMLib.h>
 #include <stdlib.h>
 
 double getIdleSeconds() {
@@ -20,9 +21,16 @@ int tryMoveMouse(int dx, int dy) {
 	CFRelease(event);
 
 	CGPoint newPos = CGPointMake(pos.x + dx, pos.y + dy);
-	CGEventRef move = CGEventCreateMouseEvent(NULL, kCGEventMouseMoved, newPos, kCGMouseButtonLeft);
+	CGEventSourceRef source = CGEventSourceCreate(kCGEventSourceStateHIDSystemState);
+	CGEventRef move = CGEventCreateMouseEvent(source, kCGEventMouseMoved, newPos, kCGMouseButtonLeft);
+
+	// Set delta values so the system recognizes this as real user activity
+	CGEventSetIntegerValueField(move, kCGMouseEventDeltaX, dx);
+	CGEventSetIntegerValueField(move, kCGMouseEventDeltaY, dy);
+
 	CGEventPost(kCGHIDEventTap, move);
 	CFRelease(move);
+	CFRelease(source);
 
 	CGEventRef check = CGEventCreate(NULL);
 	CGPoint checkPos = CGEventGetLocation(check);
@@ -78,6 +86,27 @@ void showAlert(const char* title, const char* msg);
 int isDarkMode();
 void openURL(const char* url);
 const char* systemLanguage();
+
+// Create a power assertion to prevent idle sleep.
+// Returns the assertion ID (>0) on success, or 0 on failure.
+IOPMAssertionID createWakeAssertion(const char* reason) {
+	IOPMAssertionID assertionID = 0;
+	CFStringRef cfReason = CFStringCreateWithCString(kCFAllocatorDefault, reason, kCFStringEncodingUTF8);
+	IOReturn result = IOPMAssertionCreateWithName(
+		kIOPMAssertionTypePreventUserIdleSystemSleep,
+		kIOPMAssertionLevelOn,
+		cfReason,
+		&assertionID);
+	CFRelease(cfReason);
+	return (result == kIOReturnSuccess) ? assertionID : 0;
+}
+
+// Release a previously created power assertion.
+void releaseWakeAssertion(IOPMAssertionID assertionID) {
+	if (assertionID != 0) {
+		IOPMAssertionRelease(assertionID);
+	}
+}
 */
 import "C"
 
@@ -139,6 +168,19 @@ func OpenGitHub() {
 	url := C.CString("https://github.com/Smotherer007/wach")
 	C.openURL(url)
 	C.free(unsafe.Pointer(url))
+}
+
+// createWakeAssertion prevents the system from idle-sleeping.
+// Returns the assertion ID (>0) on success, or 0 on failure.
+func createWakeAssertion(reason string) uint32 {
+	cReason := C.CString(reason)
+	defer C.free(unsafe.Pointer(cReason))
+	return uint32(C.createWakeAssertion(cReason))
+}
+
+// releaseWakeAssertion releases a previously created wake assertion.
+func releaseWakeAssertion(id uint32) {
+	C.releaseWakeAssertion(C.IOPMAssertionID(id))
 }
 
 // ShowAbout displays the About dialog with version info.
