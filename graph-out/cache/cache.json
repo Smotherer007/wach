@@ -1,0 +1,5660 @@
+{
+  "assets/icon/icon.go": {
+    "hash": "2984e5fa01967c55",
+    "nodes": [
+      {
+        "id": "assets_icon_icon_file",
+        "label": "assets/icon/icon.go",
+        "type": "file",
+        "sourceFile": "assets/icon/icon.go"
+      }
+    ],
+    "edges": []
+  },
+  "assets/icon/icon_test.go": {
+    "hash": "4306f748c074b19a",
+    "nodes": [
+      {
+        "id": "assets_icon_icon_test_file",
+        "label": "assets/icon/icon_test.go",
+        "type": "file",
+        "sourceFile": "assets/icon/icon_test.go"
+      },
+      {
+        "id": "assets_icon_icon_test_TestIconOpenIsValidPNG",
+        "label": "TestIconOpenIsValidPNG",
+        "type": "function",
+        "sourceFile": "assets/icon/icon_test.go",
+        "sourceLocation": "L11"
+      },
+      {
+        "id": "assets_icon_icon_test_TestIconClosedIsValidPNG",
+        "label": "TestIconClosedIsValidPNG",
+        "type": "function",
+        "sourceFile": "assets/icon/icon_test.go",
+        "sourceLocation": "L20"
+      },
+      {
+        "id": "assets_icon_icon_test_TestIconSizes",
+        "label": "TestIconSizes",
+        "type": "function",
+        "sourceFile": "assets/icon/icon_test.go",
+        "sourceLocation": "L29"
+      },
+      {
+        "id": "assets_icon_icon_test_TestIconsAreDifferent",
+        "label": "TestIconsAreDifferent",
+        "type": "function",
+        "sourceFile": "assets/icon/icon_test.go",
+        "sourceLocation": "L42"
+      }
+    ],
+    "edges": [
+      {
+        "source": "assets_icon_icon_test_file",
+        "target": "assets_icon_icon_test_TestIconOpenIsValidPNG",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconOpenIsValidPNG",
+        "target": "assets_icon_icon_test_len",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconOpenIsValidPNG",
+        "target": "assets_icon_icon_test_t_Fatal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconOpenIsValidPNG",
+        "target": "assets_icon_icon_test_bytes_HasPrefix",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconOpenIsValidPNG",
+        "target": "assets_icon_icon_test_t_Fatal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_file",
+        "target": "assets_icon_icon_test_TestIconClosedIsValidPNG",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconClosedIsValidPNG",
+        "target": "assets_icon_icon_test_len",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconClosedIsValidPNG",
+        "target": "assets_icon_icon_test_t_Fatal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconClosedIsValidPNG",
+        "target": "assets_icon_icon_test_bytes_HasPrefix",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconClosedIsValidPNG",
+        "target": "assets_icon_icon_test_t_Fatal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_file",
+        "target": "assets_icon_icon_test_TestIconSizes",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconSizes",
+        "target": "assets_icon_icon_test_t_Logf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconSizes",
+        "target": "assets_icon_icon_test_len",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconSizes",
+        "target": "assets_icon_icon_test_t_Logf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconSizes",
+        "target": "assets_icon_icon_test_len",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconSizes",
+        "target": "assets_icon_icon_test_len",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconSizes",
+        "target": "assets_icon_icon_test_t_Error",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconSizes",
+        "target": "assets_icon_icon_test_len",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconSizes",
+        "target": "assets_icon_icon_test_t_Error",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_file",
+        "target": "assets_icon_icon_test_TestIconsAreDifferent",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconsAreDifferent",
+        "target": "assets_icon_icon_test_bytes_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "assets_icon_icon_test_TestIconsAreDifferent",
+        "target": "assets_icon_icon_test_t_Error",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  },
+  "cmd/main.go": {
+    "hash": "f136e969ea121432",
+    "nodes": [
+      {
+        "id": "cmd_main_file",
+        "label": "cmd/main.go",
+        "type": "file",
+        "sourceFile": "cmd/main.go"
+      },
+      {
+        "id": "cmd_main_main",
+        "label": "main",
+        "type": "function",
+        "sourceFile": "cmd/main.go",
+        "sourceLocation": "L10"
+      },
+      {
+        "id": "cmd_main_onReady",
+        "label": "onReady",
+        "type": "function",
+        "sourceFile": "cmd/main.go",
+        "sourceLocation": "L14"
+      },
+      {
+        "id": "cmd_main_onExit",
+        "label": "onExit",
+        "type": "function",
+        "sourceFile": "cmd/main.go",
+        "sourceLocation": "L66"
+      }
+    ],
+    "edges": [
+      {
+        "source": "cmd_main_file",
+        "target": "cmd_main_log",
+        "relation": "imports",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "cmd_main_file",
+        "target": "cmd_main_main",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "cmd_main_main",
+        "target": "cmd_main_systray_Run",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_file",
+        "target": "cmd_main_onReady",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_func_______systray_SetTitle_______systray_SetTooltip__Wach___Mac_bleibt_wach______mAbout____systray_AddMenuItem__Uber_Wach____Info_zur_App_____systray_AddSeparator______mStart____systray_AddMenuItem__Start____Mausbewegung_starten_____mStop____systray_AddMenuItem__Stop____Mausbewegung_stoppen_____mStop_Disable______systray_AddSeparator_____mQuit____systray_AddMenuItem__Beenden____Wach_beenden______w____wach_GetInstance_____w_Start_____mStart_Disable_____mStop_Enable________Offenes_Auge___aktiv___systray_SetTemplateIcon_icon_IconOpen__icon_IconOpen_____for______select______case___mStart_ClickedCh______log_Info__starte_wach_______w_Start_______mStart_Disable_______mStop_Enable_______systray_SetTemplateIcon_icon_IconOpen__icon_IconOpen______case___mStop_ClickedCh______log_Info__stoppe_wach_______mStart_Enable_______mStop_Disable_______w_Stop__________Geschlossenes_Auge___gestoppt_____systray_SetTemplateIcon_icon_IconClosed__icon_IconClosed______case___mQuit_ClickedCh______log_Info__beende_wach_______w_Stop_______systray_Quit_______return_____case___mAbout_ClickedCh______wach_ShowAbout______________",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_SetTitle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_SetTooltip",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddSeparator",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mStop_Disable",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddSeparator",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_wach_GetInstance",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_Start",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mStart_Disable",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mStop_Enable",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_SetTemplateIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_log_Info",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_Start",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mStart_Disable",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mStop_Enable",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_SetTemplateIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_log_Info",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mStart_Enable",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mStop_Disable",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_Stop",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_SetTemplateIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_log_Info",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_Stop",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_Quit",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_wach_ShowAbout",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_file",
+        "target": "cmd_main_onExit",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "cmd_main_onExit",
+        "target": "cmd_main_log_Info",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  },
+  "lib/systray/example/icon/iconunix.go": {
+    "hash": "2bbc71cdcea1da08",
+    "nodes": [
+      {
+        "id": "lib_systray_example_icon_iconunix_file",
+        "label": "lib/systray/example/icon/iconunix.go",
+        "type": "file",
+        "sourceFile": "lib/systray/example/icon/iconunix.go"
+      }
+    ],
+    "edges": []
+  },
+  "lib/systray/example/icon/iconwin.go": {
+    "hash": "bd292c16e7a76877",
+    "nodes": [
+      {
+        "id": "lib_systray_example_icon_iconwin_file",
+        "label": "lib/systray/example/icon/iconwin.go",
+        "type": "file",
+        "sourceFile": "lib/systray/example/icon/iconwin.go"
+      }
+    ],
+    "edges": []
+  },
+  "lib/systray/example/icon/make_icon.sh": {
+    "hash": "39f4f2593368916f",
+    "nodes": [
+      {
+        "id": "lib_systray_example_icon_make_icon_file",
+        "label": "lib/systray/example/icon/make_icon.sh",
+        "type": "file",
+        "sourceFile": "lib/systray/example/icon/make_icon.sh"
+      }
+    ],
+    "edges": []
+  },
+  "lib/systray/example/main.go": {
+    "hash": "e98a7b44caa66f40",
+    "nodes": [
+      {
+        "id": "lib_systray_example_main_file",
+        "label": "lib/systray/example/main.go",
+        "type": "file",
+        "sourceFile": "lib/systray/example/main.go"
+      },
+      {
+        "id": "lib_systray_example_main_main",
+        "label": "main",
+        "type": "function",
+        "sourceFile": "lib/systray/example/main.go",
+        "sourceLocation": "L13"
+      },
+      {
+        "id": "lib_systray_example_main_onReady",
+        "label": "onReady",
+        "type": "function",
+        "sourceFile": "lib/systray/example/main.go",
+        "sourceLocation": "L22"
+      }
+    ],
+    "edges": [
+      {
+        "source": "lib_systray_example_main_file",
+        "target": "lib_systray_example_main_main",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_example_main_main",
+        "target": "lib_systray_example_main_time_Now",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_main",
+        "target": "lib_systray_example_main_ioutil_WriteFile",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_main",
+        "target": "lib_systray_example_main_fmt_Sprintf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_main",
+        "target": "lib_systray_example_main_now_UnixNano",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_main",
+        "target": "lib_systray_example_main_now_String",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_main",
+        "target": "lib_systray_example_main_systray_Run",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_file",
+        "target": "lib_systray_example_main_onReady",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_SetTemplateIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_SetTitle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_SetTooltip",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_func_________mQuitOrig_ClickedCh___fmt_Println__Requesting_quit_____systray_Quit_____fmt_Println__Finished_quitting_____",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_fmt_Println",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_Quit",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_fmt_Println",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_func_______systray_SetTemplateIcon_icon_Data__icon_Data____systray_SetTitle__Awesome_App_____systray_SetTooltip__Pretty_awesome________mChange____systray_AddMenuItem__Change_Me____Change_Me_____mChecked____systray_AddMenuItemCheckbox__Unchecked____Check_Me___true____mEnabled____systray_AddMenuItem__Enabled____Enabled________Sets_the_icon_of_a_menu_item__Only_available_on_Mac____mEnabled_SetTemplateIcon_icon_Data__icon_Data_____systray_AddMenuItem__Ignored____Ignored______subMenuTop____systray_AddMenuItem__SubMenuTop____SubMenu_Test__top______subMenuMiddle____subMenuTop_AddSubMenuItem__SubMenuMiddle____SubMenu_Test__middle______subMenuBottom____subMenuMiddle_AddSubMenuItemCheckbox__SubMenuBottom___Toggle_Panic_____SubMenu_Test__bottom____Hide_Show_Panic____false____subMenuBottom2____subMenuMiddle_AddSubMenuItem__SubMenuBottom___Panic_____SubMenu_Test__bottom_______mUrl____systray_AddMenuItem__Open_UI____my_home_____mQuit____systray_AddMenuItem________Quit_the_whole_app_________Sets_the_icon_of_a_menu_item__Only_available_on_Mac____mQuit_SetIcon_icon_Data_____systray_AddSeparator_____mToggle____systray_AddMenuItem__Toggle____Toggle_the_Quit_button_____shown____true___toggle____func________if_shown_______subMenuBottom_Check_______subMenuBottom2_Hide_______mQuitOrig_Hide_______mEnabled_Hide_______shown___false______else_______subMenuBottom_Uncheck_______subMenuBottom2_Show_______mQuitOrig_Show_______mEnabled_Show_______shown___true_____________for______select______case___mChange_ClickedCh______mChange_SetTitle__I_ve_Changed______case___mChecked_ClickedCh______if_mChecked_Checked__________mChecked_Uncheck________mChecked_SetTitle__Unchecked_________else________mChecked_Check________mChecked_SetTitle__Checked____________case___mEnabled_ClickedCh______mEnabled_SetTitle__Disabled_______mEnabled_Disable______case___mUrl_ClickedCh______open_Run__https___www_getlantern_org______case___subMenuBottom2_ClickedCh______panic__panic_button_pressed______case___subMenuBottom_ClickedCh______toggle______case___mToggle_ClickedCh______toggle______case___mQuit_ClickedCh______systray_Quit_______fmt_Println__Quit2_now__________return____________",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_SetTemplateIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_SetTitle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_SetTooltip",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_AddMenuItemCheckbox",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_mEnabled_SetTemplateIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_subMenuTop_AddSubMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_subMenuMiddle_AddSubMenuItemCheckbox",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_subMenuMiddle_AddSubMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_mQuit_SetIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_AddSeparator",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_subMenuBottom_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_subMenuBottom2_Hide",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_mQuitOrig_Hide",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_mEnabled_Hide",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_subMenuBottom_Uncheck",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_subMenuBottom2_Show",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_mQuitOrig_Show",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_mEnabled_Show",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_mChange_SetTitle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_mChecked_Checked",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_mChecked_Uncheck",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_mChecked_SetTitle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_mChecked_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_mChecked_SetTitle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_mEnabled_SetTitle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_mEnabled_Disable",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_open_Run",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_panic",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_toggle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_toggle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_systray_Quit",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_example_main_onReady",
+        "target": "lib_systray_example_main_fmt_Println",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  },
+  "lib/systray/systray.go": {
+    "hash": "f9fc40a9851e78d5",
+    "nodes": [
+      {
+        "id": "lib_systray_systray_file",
+        "label": "lib/systray/systray.go",
+        "type": "file",
+        "sourceFile": "lib/systray/systray.go"
+      },
+      {
+        "id": "lib_systray_systray_init",
+        "label": "init",
+        "type": "function",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L27"
+      },
+      {
+        "id": "lib_systray_systray_MenuItem",
+        "label": "MenuItem",
+        "type": "struct",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L33"
+      },
+      {
+        "id": "lib_systray_systray_MenuItem_String",
+        "label": "MenuItem.String",
+        "type": "method",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L53"
+      },
+      {
+        "id": "lib_systray_systray_newMenuItem",
+        "label": "newMenuItem",
+        "type": "function",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L61"
+      },
+      {
+        "id": "lib_systray_systray_Run",
+        "label": "Run",
+        "type": "function",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L76"
+      },
+      {
+        "id": "lib_systray_systray_Register",
+        "label": "Register",
+        "type": "function",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L86"
+      },
+      {
+        "id": "lib_systray_systray_Quit",
+        "label": "Quit",
+        "type": "function",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L110"
+      },
+      {
+        "id": "lib_systray_systray_AddMenuItem",
+        "label": "AddMenuItem",
+        "type": "function",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L117"
+      },
+      {
+        "id": "lib_systray_systray_AddMenuItemCheckbox",
+        "label": "AddMenuItemCheckbox",
+        "type": "function",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L126"
+      },
+      {
+        "id": "lib_systray_systray_AddSeparator",
+        "label": "AddSeparator",
+        "type": "function",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L135"
+      },
+      {
+        "id": "lib_systray_systray_MenuItem_AddSubMenuItem",
+        "label": "MenuItem.AddSubMenuItem",
+        "type": "method",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L142"
+      },
+      {
+        "id": "lib_systray_systray_MenuItem_AddSubMenuItemCheckbox",
+        "label": "MenuItem.AddSubMenuItemCheckbox",
+        "type": "method",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L151"
+      },
+      {
+        "id": "lib_systray_systray_MenuItem_SetTitle",
+        "label": "MenuItem.SetTitle",
+        "type": "method",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L160"
+      },
+      {
+        "id": "lib_systray_systray_MenuItem_SetTooltip",
+        "label": "MenuItem.SetTooltip",
+        "type": "method",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L166"
+      },
+      {
+        "id": "lib_systray_systray_MenuItem_Disabled",
+        "label": "MenuItem.Disabled",
+        "type": "method",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L172"
+      },
+      {
+        "id": "lib_systray_systray_MenuItem_Enable",
+        "label": "MenuItem.Enable",
+        "type": "method",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L177"
+      },
+      {
+        "id": "lib_systray_systray_MenuItem_Disable",
+        "label": "MenuItem.Disable",
+        "type": "method",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L183"
+      },
+      {
+        "id": "lib_systray_systray_MenuItem_Hide",
+        "label": "MenuItem.Hide",
+        "type": "method",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L189"
+      },
+      {
+        "id": "lib_systray_systray_MenuItem_Show",
+        "label": "MenuItem.Show",
+        "type": "method",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L194"
+      },
+      {
+        "id": "lib_systray_systray_MenuItem_Checked",
+        "label": "MenuItem.Checked",
+        "type": "method",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L199"
+      },
+      {
+        "id": "lib_systray_systray_MenuItem_Check",
+        "label": "MenuItem.Check",
+        "type": "method",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L204"
+      },
+      {
+        "id": "lib_systray_systray_MenuItem_Uncheck",
+        "label": "MenuItem.Uncheck",
+        "type": "method",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L210"
+      },
+      {
+        "id": "lib_systray_systray_MenuItem_update",
+        "label": "MenuItem.update",
+        "type": "method",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L216"
+      },
+      {
+        "id": "lib_systray_systray_systrayMenuItemSelected",
+        "label": "systrayMenuItemSelected",
+        "type": "function",
+        "sourceFile": "lib/systray/systray.go",
+        "sourceLocation": "L223"
+      }
+    ],
+    "edges": [
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_init",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_init",
+        "target": "lib_systray_systray_runtime_LockOSThread",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_MenuItem",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_MenuItem_String",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_newMenuItem",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_newMenuItem",
+        "target": "lib_systray_systray_make",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_newMenuItem",
+        "target": "lib_systray_systray_atomic_AddUint32",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_Run",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_Run",
+        "target": "lib_systray_systray_Register",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_Run",
+        "target": "lib_systray_systray_nativeLoop",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_Register",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_Register",
+        "target": "lib_systray_systray_make",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_Register",
+        "target": "lib_systray_systray_func__________readyCh____onReady______",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_Register",
+        "target": "lib_systray_systray_onReady",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_Register",
+        "target": "lib_systray_systray_close",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_Register",
+        "target": "lib_systray_systray_registerSystray",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_Quit",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_Quit",
+        "target": "lib_systray_systray_quitOnce_Do",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_AddMenuItem",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_AddMenuItem",
+        "target": "lib_systray_systray_newMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_AddMenuItem",
+        "target": "lib_systray_systray_item_update",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_AddMenuItemCheckbox",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_AddMenuItemCheckbox",
+        "target": "lib_systray_systray_newMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_AddMenuItemCheckbox",
+        "target": "lib_systray_systray_item_update",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_AddSeparator",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_AddSeparator",
+        "target": "lib_systray_systray_addSeparator",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_AddSeparator",
+        "target": "lib_systray_systray_atomic_AddUint32",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_MenuItem_AddSubMenuItem",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_MenuItem_AddSubMenuItemCheckbox",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_MenuItem_SetTitle",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_MenuItem_SetTooltip",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_MenuItem_Disabled",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_MenuItem_Enable",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_MenuItem_Disable",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_MenuItem_Hide",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_MenuItem_Show",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_MenuItem_Checked",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_MenuItem_Check",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_MenuItem_Uncheck",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_MenuItem_update",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_file",
+        "target": "lib_systray_systray_systrayMenuItemSelected",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_systrayMenuItemSelected",
+        "target": "lib_systray_systray_menuItemsLock_RLock",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_systrayMenuItemSelected",
+        "target": "lib_systray_systray_menuItemsLock_RUnlock",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_systrayMenuItemSelected",
+        "target": "lib_systray_systray_log_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  },
+  "lib/systray/systray_darwin.go": {
+    "hash": "41e3a5dddaa4bd5f",
+    "nodes": [
+      {
+        "id": "lib_systray_systray_darwin_file",
+        "label": "lib/systray/systray_darwin.go",
+        "type": "file",
+        "sourceFile": "lib/systray/systray_darwin.go"
+      },
+      {
+        "id": "lib_systray_systray_darwin_SetTemplateIcon",
+        "label": "SetTemplateIcon",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_darwin.go",
+        "sourceLocation": "L19"
+      },
+      {
+        "id": "lib_systray_systray_darwin_MenuItem_SetIcon",
+        "label": "MenuItem.SetIcon",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_darwin.go",
+        "sourceLocation": "L26"
+      },
+      {
+        "id": "lib_systray_systray_darwin_MenuItem_SetTemplateIcon",
+        "label": "MenuItem.SetTemplateIcon",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_darwin.go",
+        "sourceLocation": "L35"
+      }
+    ],
+    "edges": [
+      {
+        "source": "lib_systray_systray_darwin_file",
+        "target": "lib_systray_systray_darwin_SetTemplateIcon",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_darwin_SetTemplateIcon",
+        "target": "lib_systray_systray_darwin___C_char_",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_darwin_SetTemplateIcon",
+        "target": "lib_systray_systray_darwin_unsafe_Pointer",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_darwin_SetTemplateIcon",
+        "target": "lib_systray_systray_darwin_C_setIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_darwin_SetTemplateIcon",
+        "target": "lib_systray_systray_darwin__C_int_",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_darwin_SetTemplateIcon",
+        "target": "lib_systray_systray_darwin_len",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_darwin_file",
+        "target": "lib_systray_systray_darwin_MenuItem_SetIcon",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_darwin_file",
+        "target": "lib_systray_systray_darwin_MenuItem_SetTemplateIcon",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      }
+    ]
+  },
+  "lib/systray/systray_linux.go": {
+    "hash": "e24dc7021d0e7452",
+    "nodes": [
+      {
+        "id": "lib_systray_systray_linux_file",
+        "label": "lib/systray/systray_linux.go",
+        "type": "file",
+        "sourceFile": "lib/systray/systray_linux.go"
+      },
+      {
+        "id": "lib_systray_systray_linux_SetTemplateIcon",
+        "label": "SetTemplateIcon",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_linux.go",
+        "sourceLocation": "L7"
+      },
+      {
+        "id": "lib_systray_systray_linux_MenuItem_SetIcon",
+        "label": "MenuItem.SetIcon",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_linux.go",
+        "sourceLocation": "L13"
+      },
+      {
+        "id": "lib_systray_systray_linux_MenuItem_SetTemplateIcon",
+        "label": "MenuItem.SetTemplateIcon",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_linux.go",
+        "sourceLocation": "L20"
+      }
+    ],
+    "edges": [
+      {
+        "source": "lib_systray_systray_linux_file",
+        "target": "lib_systray_systray_linux_SetTemplateIcon",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_linux_SetTemplateIcon",
+        "target": "lib_systray_systray_linux_SetIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_linux_file",
+        "target": "lib_systray_systray_linux_MenuItem_SetIcon",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_linux_file",
+        "target": "lib_systray_systray_linux_MenuItem_SetTemplateIcon",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      }
+    ]
+  },
+  "lib/systray/systray_linux_appindicator.go": {
+    "hash": "3bf85ad111a7b5fd",
+    "nodes": [
+      {
+        "id": "lib_systray_systray_linux_appindicator_file",
+        "label": "lib/systray/systray_linux_appindicator.go",
+        "type": "file",
+        "sourceFile": "lib/systray/systray_linux_appindicator.go"
+      }
+    ],
+    "edges": []
+  },
+  "lib/systray/systray_linux_ayatana.go": {
+    "hash": "88b48024c29a92bf",
+    "nodes": [
+      {
+        "id": "lib_systray_systray_linux_ayatana_file",
+        "label": "lib/systray/systray_linux_ayatana.go",
+        "type": "file",
+        "sourceFile": "lib/systray/systray_linux_ayatana.go"
+      }
+    ],
+    "edges": []
+  },
+  "lib/systray/systray_nonwindows.go": {
+    "hash": "198016166da283da",
+    "nodes": [
+      {
+        "id": "lib_systray_systray_nonwindows_file",
+        "label": "lib/systray/systray_nonwindows.go",
+        "type": "file",
+        "sourceFile": "lib/systray/systray_nonwindows.go"
+      },
+      {
+        "id": "lib_systray_systray_nonwindows_registerSystray",
+        "label": "registerSystray",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_nonwindows.go",
+        "sourceLocation": "L13"
+      },
+      {
+        "id": "lib_systray_systray_nonwindows_nativeLoop",
+        "label": "nativeLoop",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_nonwindows.go",
+        "sourceLocation": "L17"
+      },
+      {
+        "id": "lib_systray_systray_nonwindows_quit",
+        "label": "quit",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_nonwindows.go",
+        "sourceLocation": "L21"
+      },
+      {
+        "id": "lib_systray_systray_nonwindows_SetIcon",
+        "label": "SetIcon",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_nonwindows.go",
+        "sourceLocation": "L28"
+      },
+      {
+        "id": "lib_systray_systray_nonwindows_SetTitle",
+        "label": "SetTitle",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_nonwindows.go",
+        "sourceLocation": "L34"
+      },
+      {
+        "id": "lib_systray_systray_nonwindows_SetTooltip",
+        "label": "SetTooltip",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_nonwindows.go",
+        "sourceLocation": "L40"
+      },
+      {
+        "id": "lib_systray_systray_nonwindows_addOrUpdateMenuItem",
+        "label": "addOrUpdateMenuItem",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_nonwindows.go",
+        "sourceLocation": "L44"
+      },
+      {
+        "id": "lib_systray_systray_nonwindows_addSeparator",
+        "label": "addSeparator",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_nonwindows.go",
+        "sourceLocation": "L72"
+      },
+      {
+        "id": "lib_systray_systray_nonwindows_hideMenuItem",
+        "label": "hideMenuItem",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_nonwindows.go",
+        "sourceLocation": "L76"
+      },
+      {
+        "id": "lib_systray_systray_nonwindows_showMenuItem",
+        "label": "showMenuItem",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_nonwindows.go",
+        "sourceLocation": "L82"
+      },
+      {
+        "id": "lib_systray_systray_nonwindows_systray_ready",
+        "label": "systray_ready",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_nonwindows.go",
+        "sourceLocation": "L89"
+      },
+      {
+        "id": "lib_systray_systray_nonwindows_systray_on_exit",
+        "label": "systray_on_exit",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_nonwindows.go",
+        "sourceLocation": "L94"
+      },
+      {
+        "id": "lib_systray_systray_nonwindows_systray_menu_item_selected",
+        "label": "systray_menu_item_selected",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_nonwindows.go",
+        "sourceLocation": "L99"
+      }
+    ],
+    "edges": [
+      {
+        "source": "lib_systray_systray_nonwindows_file",
+        "target": "lib_systray_systray_nonwindows_registerSystray",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_registerSystray",
+        "target": "lib_systray_systray_nonwindows_C_registerSystray",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_file",
+        "target": "lib_systray_systray_nonwindows_nativeLoop",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_nativeLoop",
+        "target": "lib_systray_systray_nonwindows_C_nativeLoop",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_file",
+        "target": "lib_systray_systray_nonwindows_quit",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_quit",
+        "target": "lib_systray_systray_nonwindows_C_quit",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_file",
+        "target": "lib_systray_systray_nonwindows_SetIcon",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_SetIcon",
+        "target": "lib_systray_systray_nonwindows___C_char_",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_SetIcon",
+        "target": "lib_systray_systray_nonwindows_unsafe_Pointer",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_SetIcon",
+        "target": "lib_systray_systray_nonwindows_C_setIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_SetIcon",
+        "target": "lib_systray_systray_nonwindows__C_int_",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_SetIcon",
+        "target": "lib_systray_systray_nonwindows_len",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_file",
+        "target": "lib_systray_systray_nonwindows_SetTitle",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_SetTitle",
+        "target": "lib_systray_systray_nonwindows_C_setTitle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_SetTitle",
+        "target": "lib_systray_systray_nonwindows_C_CString",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_file",
+        "target": "lib_systray_systray_nonwindows_SetTooltip",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_SetTooltip",
+        "target": "lib_systray_systray_nonwindows_C_setTooltip",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_SetTooltip",
+        "target": "lib_systray_systray_nonwindows_C_CString",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_file",
+        "target": "lib_systray_systray_nonwindows_addOrUpdateMenuItem",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_addOrUpdateMenuItem",
+        "target": "lib_systray_systray_nonwindows_C_add_or_update_menu_item",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_addOrUpdateMenuItem",
+        "target": "lib_systray_systray_nonwindows_C_int",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_addOrUpdateMenuItem",
+        "target": "lib_systray_systray_nonwindows_C_int",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_addOrUpdateMenuItem",
+        "target": "lib_systray_systray_nonwindows_C_CString",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_addOrUpdateMenuItem",
+        "target": "lib_systray_systray_nonwindows_C_CString",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_file",
+        "target": "lib_systray_systray_nonwindows_addSeparator",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_addSeparator",
+        "target": "lib_systray_systray_nonwindows_C_add_separator",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_addSeparator",
+        "target": "lib_systray_systray_nonwindows_C_int",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_file",
+        "target": "lib_systray_systray_nonwindows_hideMenuItem",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_hideMenuItem",
+        "target": "lib_systray_systray_nonwindows_C_hide_menu_item",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_hideMenuItem",
+        "target": "lib_systray_systray_nonwindows_C_int",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_file",
+        "target": "lib_systray_systray_nonwindows_showMenuItem",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_showMenuItem",
+        "target": "lib_systray_systray_nonwindows_C_show_menu_item",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_showMenuItem",
+        "target": "lib_systray_systray_nonwindows_C_int",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_file",
+        "target": "lib_systray_systray_nonwindows_systray_ready",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_systray_ready",
+        "target": "lib_systray_systray_nonwindows_systrayReady",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_file",
+        "target": "lib_systray_systray_nonwindows_systray_on_exit",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_systray_on_exit",
+        "target": "lib_systray_systray_nonwindows_systrayExit",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_file",
+        "target": "lib_systray_systray_nonwindows_systray_menu_item_selected",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_systray_menu_item_selected",
+        "target": "lib_systray_systray_nonwindows_systrayMenuItemSelected",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_nonwindows_systray_menu_item_selected",
+        "target": "lib_systray_systray_nonwindows_uint32",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  },
+  "lib/systray/systray_windows.go": {
+    "hash": "e41efddecc4b759b",
+    "nodes": [
+      {
+        "id": "lib_systray_systray_windows_file",
+        "label": "lib/systray/systray_windows.go",
+        "type": "file",
+        "sourceFile": "lib/systray/systray_windows.go"
+      },
+      {
+        "id": "lib_systray_systray_windows_wndClassEx",
+        "label": "wndClassEx",
+        "type": "struct",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L69"
+      },
+      {
+        "id": "lib_systray_systray_windows_wndClassEx_register",
+        "label": "wndClassEx.register",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L80"
+      },
+      {
+        "id": "lib_systray_systray_windows_wndClassEx_unregister",
+        "label": "wndClassEx.unregister",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L91"
+      },
+      {
+        "id": "lib_systray_systray_windows_notifyIconData",
+        "label": "notifyIconData",
+        "type": "struct",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L106"
+      },
+      {
+        "id": "lib_systray_systray_windows_notifyIconData_add",
+        "label": "notifyIconData.add",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L121"
+      },
+      {
+        "id": "lib_systray_systray_windows_notifyIconData_modify",
+        "label": "notifyIconData.modify",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L133"
+      },
+      {
+        "id": "lib_systray_systray_windows_notifyIconData_delete",
+        "label": "notifyIconData.delete",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L145"
+      },
+      {
+        "id": "lib_systray_systray_windows_menuItemInfo",
+        "label": "menuItemInfo",
+        "type": "struct",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L159"
+      },
+      {
+        "id": "lib_systray_systray_windows_point",
+        "label": "point",
+        "type": "struct",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L171"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray",
+        "label": "winTray",
+        "type": "struct",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L176"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray_setIcon",
+        "label": "winTray.setIcon",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L209"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray_setTooltip",
+        "label": "winTray.setTooltip",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L228"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray_wndProc",
+        "label": "winTray.wndProc",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L248"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray_initInstance",
+        "label": "winTray.initInstance",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L300"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray_createMenu",
+        "label": "winTray.createMenu",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L432"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray_convertToSubMenu",
+        "label": "winTray.convertToSubMenu",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L462"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray_addOrUpdateMenuItem",
+        "label": "winTray.addOrUpdateMenuItem",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L491"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray_addSeparatorMenuItem",
+        "label": "winTray.addSeparatorMenuItem",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L584"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray_hideMenuItem",
+        "label": "winTray.hideMenuItem",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L619"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray_showMenu",
+        "label": "winTray.showMenu",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L640"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray_delFromVisibleItems",
+        "label": "winTray.delFromVisibleItems",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L668"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray_addToVisibleItems",
+        "label": "winTray.addToVisibleItems",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L680"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray_getVisibleItemIndex",
+        "label": "winTray.getVisibleItemIndex",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L692"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray_loadIconFrom",
+        "label": "winTray.loadIconFrom",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L705"
+      },
+      {
+        "id": "lib_systray_systray_windows_winTray_iconToBitmap",
+        "label": "winTray.iconToBitmap",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L738"
+      },
+      {
+        "id": "lib_systray_systray_windows_registerSystray",
+        "label": "registerSystray",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L767"
+      },
+      {
+        "id": "lib_systray_systray_windows_nativeLoop",
+        "label": "nativeLoop",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L781"
+      },
+      {
+        "id": "lib_systray_systray_windows_quit",
+        "label": "quit",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L811"
+      },
+      {
+        "id": "lib_systray_systray_windows_iconBytesToFilePath",
+        "label": "iconBytesToFilePath",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L822"
+      },
+      {
+        "id": "lib_systray_systray_windows_SetIcon",
+        "label": "SetIcon",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L838"
+      },
+      {
+        "id": "lib_systray_systray_windows_SetTemplateIcon",
+        "label": "SetTemplateIcon",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L854"
+      },
+      {
+        "id": "lib_systray_systray_windows_SetTitle",
+        "label": "SetTitle",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L859"
+      },
+      {
+        "id": "lib_systray_systray_windows_MenuItem_parentId",
+        "label": "MenuItem.parentId",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L863"
+      },
+      {
+        "id": "lib_systray_systray_windows_MenuItem_SetIcon",
+        "label": "MenuItem.SetIcon",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L872"
+      },
+      {
+        "id": "lib_systray_systray_windows_SetTooltip",
+        "label": "SetTooltip",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L903"
+      },
+      {
+        "id": "lib_systray_systray_windows_addOrUpdateMenuItem",
+        "label": "addOrUpdateMenuItem",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L910"
+      },
+      {
+        "id": "lib_systray_systray_windows_MenuItem_SetTemplateIcon",
+        "label": "MenuItem.SetTemplateIcon",
+        "type": "method",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L922"
+      },
+      {
+        "id": "lib_systray_systray_windows_addSeparator",
+        "label": "addSeparator",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L926"
+      },
+      {
+        "id": "lib_systray_systray_windows_hideMenuItem",
+        "label": "hideMenuItem",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L934"
+      },
+      {
+        "id": "lib_systray_systray_windows_showMenuItem",
+        "label": "showMenuItem",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_windows.go",
+        "sourceLocation": "L942"
+      }
+    ],
+    "edges": [
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_wndClassEx",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_wndClassEx_register",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_wndClassEx_unregister",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_notifyIconData",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_notifyIconData_add",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_notifyIconData_modify",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_notifyIconData_delete",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_menuItemInfo",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_point",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray_setIcon",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray_setTooltip",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray_wndProc",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray_initInstance",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray_createMenu",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray_convertToSubMenu",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray_addOrUpdateMenuItem",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray_addSeparatorMenuItem",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray_hideMenuItem",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray_showMenu",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray_delFromVisibleItems",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray_addToVisibleItems",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray_getVisibleItemIndex",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray_loadIconFrom",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_winTray_iconToBitmap",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_registerSystray",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_registerSystray",
+        "target": "lib_systray_systray_windows_wt_initInstance",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_registerSystray",
+        "target": "lib_systray_systray_windows_log_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_registerSystray",
+        "target": "lib_systray_systray_windows_wt_createMenu",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_registerSystray",
+        "target": "lib_systray_systray_windows_log_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_registerSystray",
+        "target": "lib_systray_systray_windows_systrayReady",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_nativeLoop",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_nativeLoop",
+        "target": "lib_systray_systray_windows_pGetMessage_Call",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_nativeLoop",
+        "target": "lib_systray_systray_windows_uintptr",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_nativeLoop",
+        "target": "lib_systray_systray_windows_unsafe_Pointer",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_nativeLoop",
+        "target": "lib_systray_systray_windows_int32",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_nativeLoop",
+        "target": "lib_systray_systray_windows_log_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_nativeLoop",
+        "target": "lib_systray_systray_windows_pTranslateMessage_Call",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_nativeLoop",
+        "target": "lib_systray_systray_windows_uintptr",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_nativeLoop",
+        "target": "lib_systray_systray_windows_unsafe_Pointer",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_nativeLoop",
+        "target": "lib_systray_systray_windows_pDispatchMessage_Call",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_nativeLoop",
+        "target": "lib_systray_systray_windows_uintptr",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_nativeLoop",
+        "target": "lib_systray_systray_windows_unsafe_Pointer",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_quit",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_quit",
+        "target": "lib_systray_systray_windows_pPostMessage_Call",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_quit",
+        "target": "lib_systray_systray_windows_uintptr",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_iconBytesToFilePath",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_iconBytesToFilePath",
+        "target": "lib_systray_systray_windows_md5_Sum",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_iconBytesToFilePath",
+        "target": "lib_systray_systray_windows_hex_EncodeToString",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_iconBytesToFilePath",
+        "target": "lib_systray_systray_windows_filepath_Join",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_iconBytesToFilePath",
+        "target": "lib_systray_systray_windows_os_TempDir",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_iconBytesToFilePath",
+        "target": "lib_systray_systray_windows_os_Stat",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_iconBytesToFilePath",
+        "target": "lib_systray_systray_windows_os_IsNotExist",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_iconBytesToFilePath",
+        "target": "lib_systray_systray_windows_ioutil_WriteFile",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_SetIcon",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_SetIcon",
+        "target": "lib_systray_systray_windows_iconBytesToFilePath",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_SetIcon",
+        "target": "lib_systray_systray_windows_log_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_SetIcon",
+        "target": "lib_systray_systray_windows_wt_setIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_SetIcon",
+        "target": "lib_systray_systray_windows_log_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_SetTemplateIcon",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_SetTemplateIcon",
+        "target": "lib_systray_systray_windows_SetIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_SetTitle",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_MenuItem_parentId",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_MenuItem_SetIcon",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_SetTooltip",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_SetTooltip",
+        "target": "lib_systray_systray_windows_wt_setTooltip",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_SetTooltip",
+        "target": "lib_systray_systray_windows_log_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_addOrUpdateMenuItem",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_addOrUpdateMenuItem",
+        "target": "lib_systray_systray_windows_wt_addOrUpdateMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_addOrUpdateMenuItem",
+        "target": "lib_systray_systray_windows_uint32",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_addOrUpdateMenuItem",
+        "target": "lib_systray_systray_windows_item_parentId",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_addOrUpdateMenuItem",
+        "target": "lib_systray_systray_windows_log_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_MenuItem_SetTemplateIcon",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_addSeparator",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_addSeparator",
+        "target": "lib_systray_systray_windows_wt_addSeparatorMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_addSeparator",
+        "target": "lib_systray_systray_windows_log_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_hideMenuItem",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_hideMenuItem",
+        "target": "lib_systray_systray_windows_wt_hideMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_hideMenuItem",
+        "target": "lib_systray_systray_windows_uint32",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_hideMenuItem",
+        "target": "lib_systray_systray_windows_item_parentId",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_hideMenuItem",
+        "target": "lib_systray_systray_windows_log_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_file",
+        "target": "lib_systray_systray_windows_showMenuItem",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_showMenuItem",
+        "target": "lib_systray_systray_windows_addOrUpdateMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  },
+  "lib/systray/systray_windows_test.go": {
+    "hash": "73efd3d1b28ec791",
+    "nodes": [
+      {
+        "id": "lib_systray_systray_windows_test_file",
+        "label": "lib/systray/systray_windows_test.go",
+        "type": "file",
+        "sourceFile": "lib/systray/systray_windows_test.go"
+      },
+      {
+        "id": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "label": "TestBaseWindowsTray",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_windows_test.go",
+        "sourceLocation": "L18"
+      },
+      {
+        "id": "lib_systray_systray_windows_test_TestWindowsRun",
+        "label": "TestWindowsRun",
+        "type": "function",
+        "sourceFile": "lib/systray/systray_windows_test.go",
+        "sourceLocation": "L106"
+      }
+    ],
+    "edges": [
+      {
+        "source": "lib_systray_systray_windows_test_file",
+        "target": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_runtime_LockOSThread",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_wt_initInstance",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_t_Fatalf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_wt_createMenu",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_t_Fatalf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_func_______pDestroyWindow_Call_uintptr_wt_window_____wt_wcex_unregister_____",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_pDestroyWindow_Call",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_uintptr",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_wt_wcex_unregister",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_wt_setIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_t_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_wt_setTooltip",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_t_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_wt_addOrUpdateMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_atomic_AddInt32",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_t_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_wt_addOrUpdateMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_atomic_AddInt32",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_t_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_wt_addSeparatorMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_atomic_AddInt32",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_t_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_wt_addOrUpdateMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_atomic_AddInt32",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_t_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_wt_addOrUpdateMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_atomic_AddInt32",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_t_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_wt_hideMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_t_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_wt_hideMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_t_Error",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_wt_addOrUpdateMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_t_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_time_AfterFunc",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_pGetMessage_Call",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_uintptr",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_unsafe_Pointer",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_int32",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_t_Errorf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_pTranslateMessage_Call",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_uintptr",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_unsafe_Pointer",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_pDispatchMessage_Call",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_uintptr",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+        "target": "lib_systray_systray_windows_test_unsafe_Pointer",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_file",
+        "target": "lib_systray_systray_windows_test_TestWindowsRun",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestWindowsRun",
+        "target": "lib_systray_systray_windows_test_ioutil_ReadFile",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestWindowsRun",
+        "target": "lib_systray_systray_windows_test_t_Fatalf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestWindowsRun",
+        "target": "lib_systray_systray_windows_test_SetIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestWindowsRun",
+        "target": "lib_systray_systray_windows_test_SetTitle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestWindowsRun",
+        "target": "lib_systray_systray_windows_test_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestWindowsRun",
+        "target": "lib_systray_systray_windows_test_bSomeBtn_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestWindowsRun",
+        "target": "lib_systray_systray_windows_test_AddSeparator",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestWindowsRun",
+        "target": "lib_systray_systray_windows_test_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestWindowsRun",
+        "target": "lib_systray_systray_windows_test_func__________bQuit_ClickedCh____t_Log__Quit_reqested______Quit______",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestWindowsRun",
+        "target": "lib_systray_systray_windows_test_t_Log",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestWindowsRun",
+        "target": "lib_systray_systray_windows_test_Quit",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestWindowsRun",
+        "target": "lib_systray_systray_windows_test_time_AfterFunc",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestWindowsRun",
+        "target": "lib_systray_systray_windows_test_t_Log",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_systray_windows_test_TestWindowsRun",
+        "target": "lib_systray_systray_windows_test_Run",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  },
+  "lib/systray/webview_example/main.go": {
+    "hash": "8b921b377f24f32a",
+    "nodes": [
+      {
+        "id": "lib_systray_webview_example_main_file",
+        "label": "lib/systray/webview_example/main.go",
+        "type": "file",
+        "sourceFile": "lib/systray/webview_example/main.go"
+      },
+      {
+        "id": "lib_systray_webview_example_main_main",
+        "label": "main",
+        "type": "function",
+        "sourceFile": "lib/systray/webview_example/main.go",
+        "sourceLocation": "L8"
+      },
+      {
+        "id": "lib_systray_webview_example_main_onReady",
+        "label": "onReady",
+        "type": "function",
+        "sourceFile": "lib/systray/webview_example/main.go",
+        "sourceLocation": "L13"
+      }
+    ],
+    "edges": [
+      {
+        "source": "lib_systray_webview_example_main_file",
+        "target": "lib_systray_webview_example_main_main",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_webview_example_main_main",
+        "target": "lib_systray_webview_example_main_systray_Register",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_main_main",
+        "target": "lib_systray_webview_example_main_configureWebview",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_main_file",
+        "target": "lib_systray_webview_example_main_onReady",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_webview_example_main_onReady",
+        "target": "lib_systray_webview_example_main_systray_SetTemplateIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_main_onReady",
+        "target": "lib_systray_webview_example_main_systray_SetTitle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_main_onReady",
+        "target": "lib_systray_webview_example_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_main_onReady",
+        "target": "lib_systray_webview_example_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_main_onReady",
+        "target": "lib_systray_webview_example_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_main_onReady",
+        "target": "lib_systray_webview_example_main_func_______for______select______case___mShowLantern_ClickedCh______showWebview__https___www_getlantern_org______case___mShowWikipedia_ClickedCh______showWebview__https___www_wikipedia_org______case___mQuit_ClickedCh______systray_Quit______________",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_main_onReady",
+        "target": "lib_systray_webview_example_main_showWebview",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_main_onReady",
+        "target": "lib_systray_webview_example_main_showWebview",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_main_onReady",
+        "target": "lib_systray_webview_example_main_systray_Quit",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  },
+  "lib/systray/webview_example/webview_nonwindows.go": {
+    "hash": "37a0cda234d07cae",
+    "nodes": [
+      {
+        "id": "lib_systray_webview_example_webview_nonwindows_file",
+        "label": "lib/systray/webview_example/webview_nonwindows.go",
+        "type": "file",
+        "sourceFile": "lib/systray/webview_example/webview_nonwindows.go"
+      },
+      {
+        "id": "lib_systray_webview_example_webview_nonwindows_configureWebview",
+        "label": "configureWebview",
+        "type": "function",
+        "sourceFile": "lib/systray/webview_example/webview_nonwindows.go",
+        "sourceLocation": "L14"
+      },
+      {
+        "id": "lib_systray_webview_example_webview_nonwindows_showWebview",
+        "label": "showWebview",
+        "type": "function",
+        "sourceFile": "lib/systray/webview_example/webview_nonwindows.go",
+        "sourceLocation": "L18"
+      }
+    ],
+    "edges": [
+      {
+        "source": "lib_systray_webview_example_webview_nonwindows_file",
+        "target": "lib_systray_webview_example_webview_nonwindows_configureWebview",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_webview_example_webview_nonwindows_configureWebview",
+        "target": "lib_systray_webview_example_webview_nonwindows_C_configureAppWindow",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_nonwindows_configureWebview",
+        "target": "lib_systray_webview_example_webview_nonwindows_C_CString",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_nonwindows_configureWebview",
+        "target": "lib_systray_webview_example_webview_nonwindows_C_int",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_nonwindows_configureWebview",
+        "target": "lib_systray_webview_example_webview_nonwindows_C_int",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_nonwindows_file",
+        "target": "lib_systray_webview_example_webview_nonwindows_showWebview",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_webview_example_webview_nonwindows_showWebview",
+        "target": "lib_systray_webview_example_webview_nonwindows_C_showAppWindow",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_nonwindows_showWebview",
+        "target": "lib_systray_webview_example_webview_nonwindows_C_CString",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  },
+  "lib/systray/webview_example/webview_windows.go": {
+    "hash": "98ae2438f63cad15",
+    "nodes": [
+      {
+        "id": "lib_systray_webview_example_webview_windows_file",
+        "label": "lib/systray/webview_example/webview_windows.go",
+        "type": "file",
+        "sourceFile": "lib/systray/webview_example/webview_windows.go"
+      },
+      {
+        "id": "lib_systray_webview_example_webview_windows_configureWebview",
+        "label": "configureWebview",
+        "type": "function",
+        "sourceFile": "lib/systray/webview_example/webview_windows.go",
+        "sourceLocation": "L12"
+      },
+      {
+        "id": "lib_systray_webview_example_webview_windows_showWebview",
+        "label": "showWebview",
+        "type": "function",
+        "sourceFile": "lib/systray/webview_example/webview_windows.go",
+        "sourceLocation": "L31"
+      }
+    ],
+    "edges": [
+      {
+        "source": "lib_systray_webview_example_webview_windows_file",
+        "target": "lib_systray_webview_example_webview_windows_configureWebview",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_configureWebview",
+        "target": "lib_systray_webview_example_webview_windows_walk_NewMainWindow",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_configureWebview",
+        "target": "lib_systray_webview_example_webview_windows_panic",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_configureWebview",
+        "target": "lib_systray_webview_example_webview_windows_fmt_Sprintf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_configureWebview",
+        "target": "lib_systray_webview_example_webview_windows_mainWindow_SetTitle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_configureWebview",
+        "target": "lib_systray_webview_example_webview_windows_mainWindow_SetWidth",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_configureWebview",
+        "target": "lib_systray_webview_example_webview_windows_mainWindow_SetHeight",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_configureWebview",
+        "target": "lib_systray_webview_example_webview_windows_walk_NewVBoxLayout",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_configureWebview",
+        "target": "lib_systray_webview_example_webview_windows_mainWindow_SetLayout",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_configureWebview",
+        "target": "lib_systray_webview_example_webview_windows_panic",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_configureWebview",
+        "target": "lib_systray_webview_example_webview_windows_fmt_Sprintf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_configureWebview",
+        "target": "lib_systray_webview_example_webview_windows_walk_NewWebView",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_configureWebview",
+        "target": "lib_systray_webview_example_webview_windows_panic",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_configureWebview",
+        "target": "lib_systray_webview_example_webview_windows_fmt_Sprintf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_configureWebview",
+        "target": "lib_systray_webview_example_webview_windows_mainWindow_SetVisible",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_configureWebview",
+        "target": "lib_systray_webview_example_webview_windows_mainWindow_Run",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_file",
+        "target": "lib_systray_webview_example_webview_windows_showWebview",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_showWebview",
+        "target": "lib_systray_webview_example_webview_windows_mainWindow_SetVisible",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "lib_systray_webview_example_webview_windows_showWebview",
+        "target": "lib_systray_webview_example_webview_windows_webView_SetURL",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  },
+  "pkg/wach/cgo_darwin.go": {
+    "hash": "75b93bae94955ff8",
+    "nodes": [
+      {
+        "id": "pkg_wach_cgo_darwin_file",
+        "label": "pkg/wach/cgo_darwin.go",
+        "type": "file",
+        "sourceFile": "pkg/wach/cgo_darwin.go"
+      },
+      {
+        "id": "pkg_wach_cgo_darwin_getIdleDuration",
+        "label": "getIdleDuration",
+        "type": "function",
+        "sourceFile": "pkg/wach/cgo_darwin.go",
+        "sourceLocation": "L72"
+      },
+      {
+        "id": "pkg_wach_cgo_darwin_tryMoveMouse",
+        "label": "tryMoveMouse",
+        "type": "function",
+        "sourceFile": "pkg/wach/cgo_darwin.go",
+        "sourceLocation": "L78"
+      },
+      {
+        "id": "pkg_wach_cgo_darwin_isDisplayAsleep",
+        "label": "isDisplayAsleep",
+        "type": "function",
+        "sourceFile": "pkg/wach/cgo_darwin.go",
+        "sourceLocation": "L83"
+      },
+      {
+        "id": "pkg_wach_cgo_darwin_showAlert",
+        "label": "showAlert",
+        "type": "function",
+        "sourceFile": "pkg/wach/cgo_darwin.go",
+        "sourceLocation": "L88"
+      },
+      {
+        "id": "pkg_wach_cgo_darwin_IsDarkMode",
+        "label": "IsDarkMode",
+        "type": "function",
+        "sourceFile": "pkg/wach/cgo_darwin.go",
+        "sourceLocation": "L97"
+      },
+      {
+        "id": "pkg_wach_cgo_darwin_ShowAbout",
+        "label": "ShowAbout",
+        "type": "function",
+        "sourceFile": "pkg/wach/cgo_darwin.go",
+        "sourceLocation": "L102"
+      }
+    ],
+    "edges": [
+      {
+        "source": "pkg_wach_cgo_darwin_file",
+        "target": "pkg_wach_cgo_darwin_getIdleDuration",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_getIdleDuration",
+        "target": "pkg_wach_cgo_darwin_float64",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_getIdleDuration",
+        "target": "pkg_wach_cgo_darwin_C_getIdleSeconds",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_getIdleDuration",
+        "target": "pkg_wach_cgo_darwin_time_Duration",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_getIdleDuration",
+        "target": "pkg_wach_cgo_darwin_float64",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_file",
+        "target": "pkg_wach_cgo_darwin_tryMoveMouse",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_tryMoveMouse",
+        "target": "pkg_wach_cgo_darwin_C_tryMoveMouse",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_tryMoveMouse",
+        "target": "pkg_wach_cgo_darwin_C_int",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_tryMoveMouse",
+        "target": "pkg_wach_cgo_darwin_C_int",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_file",
+        "target": "pkg_wach_cgo_darwin_isDisplayAsleep",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_isDisplayAsleep",
+        "target": "pkg_wach_cgo_darwin_C_isDisplayAsleep",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_file",
+        "target": "pkg_wach_cgo_darwin_showAlert",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_showAlert",
+        "target": "pkg_wach_cgo_darwin_C_CString",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_showAlert",
+        "target": "pkg_wach_cgo_darwin_C_CString",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_showAlert",
+        "target": "pkg_wach_cgo_darwin_C_showAlert",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_showAlert",
+        "target": "pkg_wach_cgo_darwin_C_free",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_showAlert",
+        "target": "pkg_wach_cgo_darwin_unsafe_Pointer",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_showAlert",
+        "target": "pkg_wach_cgo_darwin_C_free",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_showAlert",
+        "target": "pkg_wach_cgo_darwin_unsafe_Pointer",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_file",
+        "target": "pkg_wach_cgo_darwin_IsDarkMode",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_IsDarkMode",
+        "target": "pkg_wach_cgo_darwin_C_isDarkMode",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_file",
+        "target": "pkg_wach_cgo_darwin_ShowAbout",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_ShowAbout",
+        "target": "pkg_wach_cgo_darwin_fmt_Sprintf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_ShowAbout",
+        "target": "pkg_wach_cgo_darwin_showAlert",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  },
+  "pkg/wach/doc.go": {
+    "hash": "d9805f8bad65b7e2",
+    "nodes": [
+      {
+        "id": "pkg_wach_doc_file",
+        "label": "pkg/wach/doc.go",
+        "type": "file",
+        "sourceFile": "pkg/wach/doc.go"
+      }
+    ],
+    "edges": []
+  },
+  "pkg/wach/logger.go": {
+    "hash": "e7c01f3fd7b7922c",
+    "nodes": [
+      {
+        "id": "pkg_wach_logger_file",
+        "label": "pkg/wach/logger.go",
+        "type": "file",
+        "sourceFile": "pkg/wach/logger.go"
+      },
+      {
+        "id": "pkg_wach_logger_newLogger",
+        "label": "newLogger",
+        "type": "function",
+        "sourceFile": "pkg/wach/logger.go",
+        "sourceLocation": "L17"
+      },
+      {
+        "id": "pkg_wach_logger_init",
+        "label": "init",
+        "type": "function",
+        "sourceFile": "pkg/wach/logger.go",
+        "sourceLocation": "L45"
+      }
+    ],
+    "edges": [
+      {
+        "source": "pkg_wach_logger_file",
+        "target": "pkg_wach_logger_newLogger",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_logger_newLogger",
+        "target": "pkg_wach_logger_logrus_New",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_logger_newLogger",
+        "target": "pkg_wach_logger_os_UserHomeDir",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_logger_newLogger",
+        "target": "pkg_wach_logger_filepath_Join",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_logger_newLogger",
+        "target": "pkg_wach_logger_os_MkdirAll",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_logger_newLogger",
+        "target": "pkg_wach_logger_os_OpenFile",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_logger_newLogger",
+        "target": "pkg_wach_logger_filepath_Join",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_logger_newLogger",
+        "target": "pkg_wach_logger_logger_SetOutput",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_logger_file",
+        "target": "pkg_wach_logger_init",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_logger_init",
+        "target": "pkg_wach_logger_logrus_SetFormatter",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  },
+  "pkg/wach/state.go": {
+    "hash": "71623544768545b4",
+    "nodes": [
+      {
+        "id": "pkg_wach_state_file",
+        "label": "pkg/wach/state.go",
+        "type": "file",
+        "sourceFile": "pkg/wach/state.go"
+      },
+      {
+        "id": "pkg_wach_state_state",
+        "label": "state",
+        "type": "struct",
+        "sourceFile": "pkg/wach/state.go",
+        "sourceLocation": "L10"
+      },
+      {
+        "id": "pkg_wach_state_state_reset",
+        "label": "state.reset",
+        "type": "method",
+        "sourceFile": "pkg/wach/state.go",
+        "sourceLocation": "L18"
+      },
+      {
+        "id": "pkg_wach_state_state_isRunning",
+        "label": "state.isRunning",
+        "type": "method",
+        "sourceFile": "pkg/wach/state.go",
+        "sourceLocation": "L26"
+      },
+      {
+        "id": "pkg_wach_state_state_setRunning",
+        "label": "state.setRunning",
+        "type": "method",
+        "sourceFile": "pkg/wach/state.go",
+        "sourceLocation": "L32"
+      },
+      {
+        "id": "pkg_wach_state_state_getLastMoved",
+        "label": "state.getLastMoved",
+        "type": "method",
+        "sourceFile": "pkg/wach/state.go",
+        "sourceLocation": "L38"
+      },
+      {
+        "id": "pkg_wach_state_state_setLastMoved",
+        "label": "state.setLastMoved",
+        "type": "method",
+        "sourceFile": "pkg/wach/state.go",
+        "sourceLocation": "L44"
+      },
+      {
+        "id": "pkg_wach_state_state_getLastErrorTime",
+        "label": "state.getLastErrorTime",
+        "type": "method",
+        "sourceFile": "pkg/wach/state.go",
+        "sourceLocation": "L50"
+      },
+      {
+        "id": "pkg_wach_state_state_setLastError",
+        "label": "state.setLastError",
+        "type": "method",
+        "sourceFile": "pkg/wach/state.go",
+        "sourceLocation": "L56"
+      }
+    ],
+    "edges": [
+      {
+        "source": "pkg_wach_state_file",
+        "target": "pkg_wach_state_state",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_state_file",
+        "target": "pkg_wach_state_state_reset",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_state_file",
+        "target": "pkg_wach_state_state_isRunning",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_state_file",
+        "target": "pkg_wach_state_state_setRunning",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_state_file",
+        "target": "pkg_wach_state_state_getLastMoved",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_state_file",
+        "target": "pkg_wach_state_state_setLastMoved",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_state_file",
+        "target": "pkg_wach_state_state_getLastErrorTime",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_state_file",
+        "target": "pkg_wach_state_state_setLastError",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      }
+    ]
+  },
+  "pkg/wach/wach.go": {
+    "hash": "9eb4e6e6fa07f17e",
+    "nodes": [
+      {
+        "id": "pkg_wach_wach_file",
+        "label": "pkg/wach/wach.go",
+        "type": "file",
+        "sourceFile": "pkg/wach/wach.go"
+      },
+      {
+        "id": "pkg_wach_wach_Config",
+        "label": "Config",
+        "type": "struct",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L40"
+      },
+      {
+        "id": "pkg_wach_wach_DefaultConfig",
+        "label": "DefaultConfig",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L47"
+      },
+      {
+        "id": "pkg_wach_wach_Wach",
+        "label": "Wach",
+        "type": "struct",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L56"
+      },
+      {
+        "id": "pkg_wach_wach_GetInstance",
+        "label": "GetInstance",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L65"
+      },
+      {
+        "id": "pkg_wach_wach_Wach_Start",
+        "label": "Wach.Start",
+        "type": "method",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L71"
+      },
+      {
+        "id": "pkg_wach_wach_Wach_Stop",
+        "label": "Wach.Stop",
+        "type": "method",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L90"
+      },
+      {
+        "id": "pkg_wach_wach_Wach_IsRunning",
+        "label": "Wach.IsRunning",
+        "type": "method",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L111"
+      },
+      {
+        "id": "pkg_wach_wach_Wach_run",
+        "label": "Wach.run",
+        "type": "method",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L119"
+      },
+      {
+        "id": "pkg_wach_wach_init",
+        "label": "init",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L191"
+      }
+    ],
+    "edges": [
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_Config",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_DefaultConfig",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_Wach",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_GetInstance",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_GetInstance",
+        "target": "pkg_wach_wach_runtime_LockOSThread",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_Wach_Start",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_Wach_Stop",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_Wach_IsRunning",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_Wach_run",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_init",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_init",
+        "target": "pkg_wach_wach_DefaultConfig",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  },
+  "pkg/wach/wach_test.go": {
+    "hash": "79a8b52b1e99b510",
+    "nodes": [
+      {
+        "id": "pkg_wach_wach_test_file",
+        "label": "pkg/wach/wach_test.go",
+        "type": "file",
+        "sourceFile": "pkg/wach/wach_test.go"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestGetInstance",
+        "label": "TestGetInstance",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L13"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestGetInstanceIsRunning",
+        "label": "TestGetInstanceIsRunning",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L20"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestDefaultConfig",
+        "label": "TestDefaultConfig",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L28"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestConfigCustomValues",
+        "label": "TestConfigCustomValues",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L35"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestStartStop",
+        "label": "TestStartStop",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L48"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestStartStopMultipleCycles",
+        "label": "TestStartStopMultipleCycles",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L71"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestStartWithNilQuitChannel",
+        "label": "TestStartWithNilQuitChannel",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L86"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestStopOnNilWach",
+        "label": "TestStopOnNilWach",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L98"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestStateLifecycle",
+        "label": "TestStateLifecycle",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L106"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestStateLastMovedUpdates",
+        "label": "TestStateLastMovedUpdates",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L129"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestStateLastErrorUpdates",
+        "label": "TestStateLastErrorUpdates",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L141"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "label": "TestStateConcurrentReadWrite",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L155"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "label": "TestStateResetDuringRead",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L186"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "label": "TestConcurrentStartStop",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L213"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestIdleDuration",
+        "label": "TestIdleDuration",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L242"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestDisplaySleep",
+        "label": "TestDisplaySleep",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L249"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestIsDarkMode",
+        "label": "TestIsDarkMode",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L256"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestAppMetadata",
+        "label": "TestAppMetadata",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L266"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestConstants",
+        "label": "TestConstants",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L275"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestStateResetIdempotent",
+        "label": "TestStateResetIdempotent",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L285"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestConfigZeroValues",
+        "label": "TestConfigZeroValues",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L295"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestIsRunningOnFreshInstance",
+        "label": "TestIsRunningOnFreshInstance",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L303"
+      },
+      {
+        "id": "pkg_wach_wach_test_TestMultipleStopsAfterStart",
+        "label": "TestMultipleStopsAfterStart",
+        "type": "function",
+        "sourceFile": "pkg/wach/wach_test.go",
+        "sourceLocation": "L311"
+      }
+    ],
+    "edges": [
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestGetInstance",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestGetInstance",
+        "target": "pkg_wach_wach_test_GetInstance",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestGetInstance",
+        "target": "pkg_wach_wach_test_GetInstance",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestGetInstance",
+        "target": "pkg_wach_wach_test_assert_Same",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestGetInstance",
+        "target": "pkg_wach_wach_test_assert_NotNil",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestGetInstanceIsRunning",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestGetInstanceIsRunning",
+        "target": "pkg_wach_wach_test_GetInstance",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestGetInstanceIsRunning",
+        "target": "pkg_wach_wach_test_assert_NotNil",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestDefaultConfig",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestDefaultConfig",
+        "target": "pkg_wach_wach_test_DefaultConfig",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestDefaultConfig",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestDefaultConfig",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestDefaultConfig",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestConfigCustomValues",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConfigCustomValues",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConfigCustomValues",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConfigCustomValues",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestStartStop",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStop",
+        "target": "pkg_wach_wach_test_DefaultConfig",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStop",
+        "target": "pkg_wach_wach_test_assert_False",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStop",
+        "target": "pkg_wach_wach_test_w_IsRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStop",
+        "target": "pkg_wach_wach_test_w_Start",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStop",
+        "target": "pkg_wach_wach_test_assert_True",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStop",
+        "target": "pkg_wach_wach_test_w_IsRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStop",
+        "target": "pkg_wach_wach_test_w_Start",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStop",
+        "target": "pkg_wach_wach_test_assert_True",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStop",
+        "target": "pkg_wach_wach_test_w_IsRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStop",
+        "target": "pkg_wach_wach_test_w_Stop",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStop",
+        "target": "pkg_wach_wach_test_assert_False",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStop",
+        "target": "pkg_wach_wach_test_w_IsRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStop",
+        "target": "pkg_wach_wach_test_w_Stop",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStop",
+        "target": "pkg_wach_wach_test_assert_False",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStop",
+        "target": "pkg_wach_wach_test_w_IsRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestStartStopMultipleCycles",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStopMultipleCycles",
+        "target": "pkg_wach_wach_test_DefaultConfig",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStopMultipleCycles",
+        "target": "pkg_wach_wach_test_w_Start",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStopMultipleCycles",
+        "target": "pkg_wach_wach_test_assert_True",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStopMultipleCycles",
+        "target": "pkg_wach_wach_test_w_IsRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStopMultipleCycles",
+        "target": "pkg_wach_wach_test_time_Sleep",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStopMultipleCycles",
+        "target": "pkg_wach_wach_test_w_Stop",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStopMultipleCycles",
+        "target": "pkg_wach_wach_test_assert_False",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartStopMultipleCycles",
+        "target": "pkg_wach_wach_test_w_IsRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestStartWithNilQuitChannel",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartWithNilQuitChannel",
+        "target": "pkg_wach_wach_test_DefaultConfig",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartWithNilQuitChannel",
+        "target": "pkg_wach_wach_test_assert_Nil",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartWithNilQuitChannel",
+        "target": "pkg_wach_wach_test_w_Start",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartWithNilQuitChannel",
+        "target": "pkg_wach_wach_test_assert_NotNil",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStartWithNilQuitChannel",
+        "target": "pkg_wach_wach_test_w_Stop",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestStopOnNilWach",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStopOnNilWach",
+        "target": "pkg_wach_wach_test_assert_NotPanics",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStopOnNilWach",
+        "target": "pkg_wach_wach_test_w_Stop",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestStateLifecycle",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_assert_False",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_s_isRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_assert_True",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_s_getLastMoved___IsZero",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_s_getLastMoved",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_assert_True",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_s_getLastErrorTime___IsZero",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_s_getLastErrorTime",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_s_setRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_assert_True",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_s_isRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_time_Now",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_s_setLastMoved",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_s_getLastMoved",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_now_Add",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_s_setLastError",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_s_getLastErrorTime",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_s_reset",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_assert_False",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_s_isRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_assert_True",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_s_getLastMoved___IsZero",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLifecycle",
+        "target": "pkg_wach_wach_test_s_getLastMoved",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestStateLastMovedUpdates",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastMovedUpdates",
+        "target": "pkg_wach_wach_test_time_Now",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastMovedUpdates",
+        "target": "pkg_wach_wach_test_s_setLastMoved",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastMovedUpdates",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastMovedUpdates",
+        "target": "pkg_wach_wach_test_s_getLastMoved",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastMovedUpdates",
+        "target": "pkg_wach_wach_test_t1_Add",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastMovedUpdates",
+        "target": "pkg_wach_wach_test_s_setLastMoved",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastMovedUpdates",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastMovedUpdates",
+        "target": "pkg_wach_wach_test_s_getLastMoved",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestStateLastErrorUpdates",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastErrorUpdates",
+        "target": "pkg_wach_wach_test_time_Now",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastErrorUpdates",
+        "target": "pkg_wach_wach_test_s_setLastError",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastErrorUpdates",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastErrorUpdates",
+        "target": "pkg_wach_wach_test_s_getLastErrorTime",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastErrorUpdates",
+        "target": "pkg_wach_wach_test_t1_Add",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastErrorUpdates",
+        "target": "pkg_wach_wach_test_s_setLastError",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastErrorUpdates",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateLastErrorUpdates",
+        "target": "pkg_wach_wach_test_s_getLastErrorTime",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_wg_Add",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_func________defer_wg_Done______s_setRunning_true_____s_setLastMoved_time_Now_______s_setLastError_time_Now_______s_reset______",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_wg_Done",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_s_setRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_s_setLastMoved",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_time_Now",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_s_setLastError",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_time_Now",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_s_reset",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_wg_Add",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_func________defer_wg_Done__________s_isRunning__________s_getLastMoved__________s_getLastErrorTime______",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_wg_Done",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_s_isRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_s_getLastMoved",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_s_getLastErrorTime",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+        "target": "pkg_wach_wach_test_wg_Wait",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_s_setRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_s_setLastMoved",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_time_Now",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_s_setLastError",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_time_Now",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_wg_Add",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_func________defer_wg_Done______s_reset______",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_wg_Done",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_s_reset",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_wg_Add",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_func________defer_wg_Done__________s_isRunning__________s_getLastMoved__________s_getLastErrorTime______",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_wg_Done",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_s_isRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_s_getLastMoved",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_s_getLastErrorTime",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetDuringRead",
+        "target": "pkg_wach_wach_test_wg_Wait",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "target": "pkg_wach_wach_test_DefaultConfig",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "target": "pkg_wach_wach_test_wg_Add",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "target": "pkg_wach_wach_test_func________defer_wg_Done______w_Start______",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "target": "pkg_wach_wach_test_wg_Done",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "target": "pkg_wach_wach_test_w_Start",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "target": "pkg_wach_wach_test_wg_Add",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "target": "pkg_wach_wach_test_func________defer_wg_Done______w_Stop______",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "target": "pkg_wach_wach_test_wg_Done",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "target": "pkg_wach_wach_test_w_Stop",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "target": "pkg_wach_wach_test_wg_Add",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "target": "pkg_wach_wach_test_func________defer_wg_Done__________w_IsRunning______",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "target": "pkg_wach_wach_test_wg_Done",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "target": "pkg_wach_wach_test_w_IsRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConcurrentStartStop",
+        "target": "pkg_wach_wach_test_wg_Wait",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestIdleDuration",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestIdleDuration",
+        "target": "pkg_wach_wach_test_getIdleDuration",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestIdleDuration",
+        "target": "pkg_wach_wach_test_t_Logf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestIdleDuration",
+        "target": "pkg_wach_wach_test_assert_Greater",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestIdleDuration",
+        "target": "pkg_wach_wach_test_time_Duration",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestIdleDuration",
+        "target": "pkg_wach_wach_test_assert_Less",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestDisplaySleep",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestDisplaySleep",
+        "target": "pkg_wach_wach_test_isDisplayAsleep",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestDisplaySleep",
+        "target": "pkg_wach_wach_test_t_Logf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestDisplaySleep",
+        "target": "pkg_wach_wach_test_assert_False",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestIsDarkMode",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestIsDarkMode",
+        "target": "pkg_wach_wach_test_IsDarkMode",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestIsDarkMode",
+        "target": "pkg_wach_wach_test_t_Logf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestIsDarkMode",
+        "target": "pkg_wach_wach_test_assert_IsType",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestIsDarkMode",
+        "target": "pkg_wach_wach_test_bool",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestAppMetadata",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestAppMetadata",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestAppMetadata",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestAppMetadata",
+        "target": "pkg_wach_wach_test_assert_Contains",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestAppMetadata",
+        "target": "pkg_wach_wach_test_assert_NotEmpty",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestConstants",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConstants",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConstants",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConstants",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConstants",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestConstants",
+        "target": "pkg_wach_wach_test_assert_Equal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestStateResetIdempotent",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetIdempotent",
+        "target": "pkg_wach_wach_test_assert_NotPanics",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetIdempotent",
+        "target": "pkg_wach_wach_test_s_reset",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetIdempotent",
+        "target": "pkg_wach_wach_test_s_setRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetIdempotent",
+        "target": "pkg_wach_wach_test_assert_NotPanics",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetIdempotent",
+        "target": "pkg_wach_wach_test_s_reset",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetIdempotent",
+        "target": "pkg_wach_wach_test_assert_False",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestStateResetIdempotent",
+        "target": "pkg_wach_wach_test_s_isRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestConfigZeroValues",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestIsRunningOnFreshInstance",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestIsRunningOnFreshInstance",
+        "target": "pkg_wach_wach_test_DefaultConfig",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestIsRunningOnFreshInstance",
+        "target": "pkg_wach_wach_test_assert_False",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestIsRunningOnFreshInstance",
+        "target": "pkg_wach_wach_test_w_IsRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_file",
+        "target": "pkg_wach_wach_test_TestMultipleStopsAfterStart",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_test_TestMultipleStopsAfterStart",
+        "target": "pkg_wach_wach_test_DefaultConfig",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestMultipleStopsAfterStart",
+        "target": "pkg_wach_wach_test_w_Start",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestMultipleStopsAfterStart",
+        "target": "pkg_wach_wach_test_w_Stop",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestMultipleStopsAfterStart",
+        "target": "pkg_wach_wach_test_w_Stop",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestMultipleStopsAfterStart",
+        "target": "pkg_wach_wach_test_w_Stop",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestMultipleStopsAfterStart",
+        "target": "pkg_wach_wach_test_assert_False",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_test_TestMultipleStopsAfterStart",
+        "target": "pkg_wach_wach_test_w_IsRunning",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  }
+}
