@@ -97,23 +97,9 @@ make test       run all tests with race detector
 make clean      remove build artifacts
 ```
 
-### Technical Details
-
-The original automatic-mouse-mover by prashantgupta24 used robotgo and activity-tracker, which are cross-platform libraries that pull in hundreds of dependencies (Windows and Linux APIs, OCR libraries, and more). This version replaces all of that with native macOS APIs:
-
-| Feature | Original | Wach |
-|---------|----------|------|
-| Mouse movement | robotgo (CGo + C++) | CoreGraphics (C) |
-| Idle detection | activity-tracker | CGEventSourceSecondsSinceLastEventType |
-| Dialogs | gosx-notifier | NSAlert (Objective-C) |
-| Binary size | ~6.4 MB | ~4.2 MB |
-| Dependencies | ~40+ indirect | ~15 indirect |
-
-The getlantern/systray library hardcodes icons at 16x16 points. This fork patches it to 20x20 for better visibility on modern Mac displays and uses template images for automatic light and dark mode support.
-
 ## Credits
 
-Original concept by prashantgupta24 (github.com/prashantgupta24/automatic-mouse-mover). Built with Go, CoreGraphics, and native macOS APIs.
+Inspired by automatic-mouse-mover by prashantgupta24. Built with Go, CoreGraphics, and native macOS APIs.
 
 ## License
 
