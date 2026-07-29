@@ -1,18 +1,17 @@
 package wach
 
 /*
-#cgo LDFLAGS: -framework CoreGraphics -framework Cocoa
+#cgo LDFLAGS: -framework CoreGraphics -framework Cocoa -framework IOKit
 
 #include <CoreGraphics/CoreGraphics.h>
-
-// CoreGraphics-based idle detection and mouse movement (pure C, no ObjC)
+#include <IOKit/ps/IOPowerSources.h>
+#include <IOKit/ps/IOPSKeys.h>
+#include <stdlib.h>
 
 double getIdleSeconds() {
-	CFTimeInterval idle = CGEventSourceSecondsSinceLastEventType(
+	return (double)CGEventSourceSecondsSinceLastEventType(
 		kCGEventSourceStateCombinedSessionState,
-		kCGAnyInputEventType
-	);
-	return (double)idle;
+		kCGAnyInputEventType);
 }
 
 int tryMoveMouse(int dx, int dy) {
@@ -29,10 +28,7 @@ int tryMoveMouse(int dx, int dy) {
 	CGPoint checkPos = CGEventGetLocation(check);
 	CFRelease(check);
 
-	if (checkPos.x == pos.x && checkPos.y == pos.y) {
-		return 0;
-	}
-	return 1;
+	return (checkPos.x == pos.x && checkPos.y == pos.y) ? 0 : 1;
 }
 
 int isDisplayAsleep() {
@@ -44,9 +40,43 @@ int isDisplayAsleep() {
 	return 0;
 }
 
-// Implemented in alert_darwin.m (Objective-C)
+int getBatteryPercent() {
+	CFTypeRef powerInfo = IOPSCopyPowerSourcesInfo();
+	if (powerInfo == NULL) return -1;
+
+	CFArrayRef list = IOPSCopyPowerSourcesList(powerInfo);
+	if (list == NULL) {
+		CFRelease(powerInfo);
+		return -1;
+	}
+
+	int pct = -1;
+	CFIndex count = CFArrayGetCount(list);
+	if (count > 0) {
+		CFDictionaryRef ps = IOPSGetPowerSourceDescription(powerInfo, CFArrayGetValueAtIndex(list, 0));
+		if (ps != NULL) {
+			CFNumberRef capacity = CFDictionaryGetValue(ps, CFSTR(kIOPSMaxCapacityKey));
+			CFNumberRef current = CFDictionaryGetValue(ps, CFSTR(kIOPSCurrentCapacityKey));
+			if (capacity != NULL && current != NULL) {
+				int maxCap = 0, curCap = 0;
+				CFNumberGetValue(capacity, kCFNumberIntType, &maxCap);
+				CFNumberGetValue(current, kCFNumberIntType, &curCap);
+				if (maxCap > 0) {
+					pct = (int)((double)curCap / (double)maxCap * 100.0);
+				}
+			}
+		}
+	}
+
+	CFRelease(list);
+	CFRelease(powerInfo);
+	return pct;
+}
+
+// ObjC functions implemented in alert_darwin.m
 void showAlert(const char* title, const char* msg);
 int isDarkMode();
+void openURL(const char* url);
 */
 import "C"
 
@@ -56,7 +86,6 @@ import (
 	"unsafe"
 )
 
-// App metadata
 const (
 	AppName    = "Wach"
 	AppVersion = "1.0.0"
@@ -64,27 +93,31 @@ const (
 
 var (
 	AppAuthor  = "Patrick Weppelmann"
-	AppSource  = "github.com/patrickweppelmann/wach"
+	AppSource  = "github.com/Smotherer007/wach"
 	AppBasedOn = "github.com/prashantgupta24/automatic-mouse-mover"
 )
 
-// getIdleDuration returns how long the system has been idle.
 func getIdleDuration() time.Duration {
-	secs := float64(C.getIdleSeconds())
-	return time.Duration(secs * float64(time.Second))
+	return time.Duration(float64(C.getIdleSeconds()) * float64(time.Second))
 }
 
-// tryMoveMouse attempts to move the mouse by (dx, dy).
 func tryMoveMouse(dx int) bool {
 	return C.tryMoveMouse(C.int(dx), C.int(dx)) == 1
 }
 
-// isDisplayAsleep returns true if the main display is sleeping.
 func isDisplayAsleep() bool {
 	return C.isDisplayAsleep() == 1
 }
 
-// showAlert shows a native macOS alert dialog via Objective-C.
+// getBatteryPercent returns battery charge percentage (0-100) or -1 if not on battery.
+func getBatteryPercent() int {
+	return int(C.getBatteryPercent())
+}
+
+func IsDarkMode() bool {
+	return C.isDarkMode() == 1
+}
+
 func showAlert(title, msg string) {
 	cTitle := C.CString(title)
 	cMsg := C.CString(msg)
@@ -93,19 +126,21 @@ func showAlert(title, msg string) {
 	C.free(unsafe.Pointer(cMsg))
 }
 
-// IsDarkMode returns true if macOS is in Dark Mode appearance.
-func IsDarkMode() bool {
-	return C.isDarkMode() == 1
+// OpenGitHub opens the project page in the default browser.
+func OpenGitHub() {
+	url := C.CString("https://github.com/Smotherer007/wach")
+	C.openURL(url)
+	C.free(unsafe.Pointer(url))
 }
 
-// ShowAbout displays the About dialog.
+// ShowAbout displays the About dialog with version info.
 func ShowAbout() {
 	msg := fmt.Sprintf(
 		"Version %s\n\n"+
 			"Ein minimaler Mausbeweger fur macOS (Apple Silicon).\n"+
 			"Halt den Mac wach, indem er bei Inaktivitat die Maus bewegt.\n\n"+
 			"(c) %s\n%s\n\n"+
-			"Basierend auf:\n%s",
+			"Inspiriert von:\n%s",
 		AppVersion, AppAuthor, AppSource, AppBasedOn,
 	)
 	showAlert("Uber Wach", msg)

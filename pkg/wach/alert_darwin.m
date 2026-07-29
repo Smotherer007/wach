@@ -14,6 +14,13 @@ void showAlert(const char* title, const char* msg) {
 	}
 }
 
+void openURL(const char* url) {
+	@autoreleasepool {
+		NSString* nsUrl = [NSString stringWithUTF8String:url];
+		[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:nsUrl]];
+	}
+}
+
 int isDarkMode() {
 	@autoreleasepool {
 		NSString *style = [[NSUserDefaults standardUserDefaults] stringForKey:@"AppleInterfaceStyle"];

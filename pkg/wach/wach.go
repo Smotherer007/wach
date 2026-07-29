@@ -3,17 +3,6 @@
 //
 // Wach (German for "awake") uses CoreGraphics APIs directly instead of
 // third-party libraries, making it lightweight and optimized for Apple Silicon.
-//
-// Requirements:
-//   - macOS 11.0+ (Big Sur or later)
-//   - Accessibility permission:
-//     System Settings > Privacy & Security > Accessibility > add Wach.app
-//
-// How it works:
-//   Every 10 seconds, Wach checks the system idle time via CoreGraphics.
-//   If the system has been idle for more than the configured threshold (default 60s),
-//   and the display is awake, it moves the mouse cursor by a few pixels to simulate
-//   user activity. The move direction alternates to keep the cursor from drifting.
 package wach
 
 import (
@@ -23,42 +12,32 @@ import (
 	"time"
 )
 
-// Package-level singleton
 var global *Wach
 
-// Default configuration constants
 const (
-	DefaultIdleThreshold = 60            // seconds of idleness before mouse move
-	DefaultMovePixels    = 10            // pixels to move the cursor
-	DefaultCheckInterval = 10            // seconds between idle checks
-	ErrorAlertThreshold  = 10            // consecutive failures before showing alert
-	ErrorAlertCooldown   = 24 * time.Hour // minimum time between error alerts
-	IdleLogInterval      = 5             // log every Nth idle check when active
+	DefaultIdleThreshold = 60
+	DefaultMovePixels    = 10
+	DefaultCheckInterval = 10
+	ErrorAlertThreshold  = 10
+	ErrorAlertCooldown   = 24 * time.Hour
+	IdleLogInterval      = 5
 )
 
-// Config holds the configurable parameters for the mouse mover.
+// Config holds the operational parameters for the mouse mover.
 type Config struct {
 	IdleThreshold time.Duration
 	MovePixels    int
 	CheckInterval time.Duration
 }
 
-// DefaultConfig returns a Config with sensible defaults.
-func DefaultConfig() Config {
-	return Config{
-		IdleThreshold: DefaultIdleThreshold * time.Second,
-		MovePixels:    DefaultMovePixels,
-		CheckInterval: DefaultCheckInterval * time.Second,
-	}
-}
-
 // Wach is the main controller for the mouse-mover service.
 type Wach struct {
-	mu     sync.Mutex // protects start/stop lifecycle
-	config Config
-	quit   chan struct{}
-	done   chan struct{}
-	state  *state
+	mu       sync.Mutex
+	config   Config
+	settings Settings
+	quit     chan struct{}
+	done     chan struct{}
+	state    *state
 }
 
 // GetInstance returns the singleton Wach instance.
@@ -79,6 +58,9 @@ func (w *Wach) Start() {
 		return
 	}
 
+	w.settings = LoadSettings()
+	w.applySettings()
+
 	w.quit = make(chan struct{})
 	w.done = make(chan struct{})
 	w.state.setRunning(true)
@@ -86,7 +68,13 @@ func (w *Wach) Start() {
 	go w.run()
 }
 
-// Stop stops the mouse-mover loop and waits for completion. Thread-safe. Idempotent.
+func (w *Wach) applySettings() {
+	w.config.IdleThreshold = time.Duration(w.settings.IdleSeconds) * time.Second
+	w.config.MovePixels = w.settings.MovePixels
+	w.config.CheckInterval = DefaultCheckInterval * time.Second
+}
+
+// Stop stops the mouse-mover loop and waits for completion.
 func (w *Wach) Stop() {
 	if w == nil {
 		return
@@ -115,7 +103,86 @@ func (w *Wach) IsRunning() bool {
 	return w.state.isRunning()
 }
 
-// run is the main event loop (runs in a separate goroutine).
+// GetSettings returns the current settings.
+func (w *Wach) GetSettings() Settings {
+	return w.settings
+}
+
+// UpdateSettings persists new settings and applies them at next start.
+func (w *Wach) UpdateSettings(s Settings) {
+	w.settings = s
+	SaveSettings(s)
+	if w.state.isRunning() {
+		w.applySettings()
+	}
+}
+
+// GetStats returns current activity statistics.
+func (w *Wach) GetStats() ActivityStats {
+	return w.state.getStats()
+}
+
+// ResetStats resets activity counters.
+func (w *Wach) ResetStats() {
+	w.state.resetStats()
+}
+
+// StatusText returns a human-readable status line.
+func (w *Wach) StatusText() string {
+	if !w.state.isRunning() {
+		return "Wach - gestoppt"
+	}
+	stats := w.state.getStats()
+	last := w.state.getLastMoved()
+	if last.IsZero() {
+		return "Wach - aktiv, noch keine Bewegung"
+	}
+	idle := getIdleDuration().Round(time.Second)
+	return fmt.Sprintf("Wach - aktiv (%ds idle, heute %dx bewegt)", 
+		int(idle.Seconds()), stats.DailyMoves)
+}
+
+// IsWithinSchedule checks whether the current time falls within the configured schedule.
+func (w *Wach) IsWithinSchedule() bool {
+	s := w.settings
+	if !s.ScheduleEnabled {
+		return true
+	}
+
+	now := time.Now()
+
+	// Workdays check (Mon=1..Fri=5)
+	if s.ScheduleWorkdays {
+		weekday := now.Weekday()
+		if weekday == time.Saturday || weekday == time.Sunday {
+			return false
+		}
+	}
+
+	// Time range check
+	start, err1 := time.Parse("15:04", s.ScheduleStart)
+	end, err2 := time.Parse("15:04", s.ScheduleEnd)
+	if err1 != nil || err2 != nil {
+		return true // invalid config = don't block
+	}
+
+	nowMin := now.Hour()*60 + now.Minute()
+	startMin := start.Hour()*60 + start.Minute()
+	endMin := end.Hour()*60 + end.Minute()
+
+	return nowMin >= startMin && nowMin < endMin
+}
+
+// IsBatteryLow returns true if on battery and below 20%.
+func (w *Wach) IsBatteryLow() bool {
+	if !w.settings.BatterySave {
+		return false
+	}
+	pct := getBatteryPercent()
+	return pct >= 0 && pct < 20
+}
+
+// run is the main event loop.
 func (w *Wach) run() {
 	logger := newLogger(w.state, false)
 	movePixel := w.config.MovePixels
@@ -134,6 +201,24 @@ func (w *Wach) run() {
 	for {
 		select {
 		case <-ticker.C:
+			// Schedule check
+			if !w.IsWithinSchedule() {
+				if activeCount == 0 {
+					logger.Debug("ausserhalb des Zeitplans — pausiert")
+				}
+				activeCount++
+				continue
+			}
+
+			// Battery check
+			if w.IsBatteryLow() {
+				if activeCount == 0 {
+					logger.Debug("akku niedrig — pausiert (Batteriesparmodus)")
+				}
+				activeCount++
+				continue
+			}
+
 			idle := getIdleDuration()
 
 			if idle < idleThreshold {
@@ -148,7 +233,7 @@ func (w *Wach) run() {
 			activeCount = 0
 
 			if isDisplayAsleep() {
-				logger.Debugf("display schläft — überspringe Mausbewegung")
+				logger.Debugf("display schläft — überspringe")
 				continue
 			}
 
@@ -172,7 +257,7 @@ func (w *Wach) run() {
 				if errCount >= ErrorAlertThreshold {
 					lastErr := w.state.getLastErrorTime()
 					if time.Since(lastErr) > ErrorAlertCooldown {
-						showAlert("Zugänglichkeit erforderlich", msg)
+						showAlert("Zuganglichkeit erforderlich", msg)
 						w.state.setLastError(time.Now())
 					}
 					errCount = 0
@@ -190,7 +275,12 @@ func (w *Wach) run() {
 
 func init() {
 	global = &Wach{
-		config: DefaultConfig(),
-		state:  &state{},
+		config: Config{
+			IdleThreshold: DefaultIdleThreshold * time.Second,
+			MovePixels:    DefaultMovePixels,
+			CheckInterval: DefaultCheckInterval * time.Second,
+		},
+		settings: DefaultSettings(),
+		state:    &state{},
 	}
 }

@@ -26,7 +26,7 @@ func TestGetInstanceIsRunning(t *testing.T) {
 // --- Config ---
 
 func TestDefaultConfig(t *testing.T) {
-	c := DefaultConfig()
+	c := Config{IdleThreshold: 60 * time.Second, MovePixels: 10, CheckInterval: 10 * time.Second}
 	assert.Equal(t, 60*time.Second, c.IdleThreshold, "default idle threshold should be 60s")
 	assert.Equal(t, 10, c.MovePixels, "default move pixels should be 10")
 	assert.Equal(t, 10*time.Second, c.CheckInterval, "default check interval should be 10s")
@@ -47,7 +47,7 @@ func TestConfigCustomValues(t *testing.T) {
 
 func TestStartStop(t *testing.T) {
 	w := &Wach{
-		config: DefaultConfig(),
+		config: Config{IdleThreshold: 60 * time.Second, MovePixels: 10, CheckInterval: 10 * time.Second},
 		state:  &state{},
 	}
 
@@ -70,7 +70,7 @@ func TestStartStop(t *testing.T) {
 
 func TestStartStopMultipleCycles(t *testing.T) {
 	w := &Wach{
-		config: DefaultConfig(),
+		config: Config{IdleThreshold: 60 * time.Second, MovePixels: 10, CheckInterval: 10 * time.Second},
 		state:  &state{},
 	}
 
@@ -86,7 +86,7 @@ func TestStartStopMultipleCycles(t *testing.T) {
 func TestStartWithNilQuitChannel(t *testing.T) {
 	// When Start() is called, it should create the quit channel
 	w := &Wach{
-		config: DefaultConfig(),
+		config: Config{IdleThreshold: 60 * time.Second, MovePixels: 10, CheckInterval: 10 * time.Second},
 		state:  &state{},
 	}
 	assert.Nil(t, w.quit, "quit channel should be nil before start")
@@ -212,7 +212,7 @@ func TestStateResetDuringRead(t *testing.T) {
 
 func TestConcurrentStartStop(t *testing.T) {
 	w := &Wach{
-		config: DefaultConfig(),
+		config: Config{IdleThreshold: 60 * time.Second, MovePixels: 10, CheckInterval: 10 * time.Second},
 		state:  &state{},
 	}
 
@@ -302,7 +302,7 @@ func TestConfigZeroValues(t *testing.T) {
 
 func TestIsRunningOnFreshInstance(t *testing.T) {
 	w := &Wach{
-		config: DefaultConfig(),
+		config: Config{IdleThreshold: 60 * time.Second, MovePixels: 10, CheckInterval: 10 * time.Second},
 		state:  &state{},
 	}
 	assert.False(t, w.IsRunning())
@@ -310,7 +310,7 @@ func TestIsRunningOnFreshInstance(t *testing.T) {
 
 func TestMultipleStopsAfterStart(t *testing.T) {
 	w := &Wach{
-		config: DefaultConfig(),
+		config: Config{IdleThreshold: 60 * time.Second, MovePixels: 10, CheckInterval: 10 * time.Second},
 		state:  &state{},
 	}
 
