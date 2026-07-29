@@ -8,7 +8,6 @@ import (
 	"github.com/getlantern/systray"
 	"github.com/patrickweppelmann/wach/assets/icon"
 	"github.com/patrickweppelmann/wach/pkg/wach"
-	log "github.com/sirupsen/logrus"
 )
 
 var (
@@ -92,6 +91,7 @@ func updateMenuFromSettings(s wach.Settings) {
 }
 
 func statusLoop(w *wach.Wach) {
+	l := w.GetLocale()
 	ticker := time.NewTicker(2 * time.Second)
 	defer ticker.Stop()
 	for range ticker.C {
@@ -99,13 +99,12 @@ func statusLoop(w *wach.Wach) {
 		mStatus.SetTitle(status)
 		systray.SetTooltip(status)
 
-		// Update stats display
 		stats := w.GetStats()
 		if stats.DailyMoves > 0 {
 			total := time.Duration(stats.TotalDuration).Round(time.Second)
-			mStats.SetTitle(fmt.Sprintf("Heute: %dx bewegt, %s aktiv", stats.DailyMoves, total))
+			mStats.SetTitle(fmt.Sprintf(l.StatsToday, stats.DailyMoves, total))
 		} else {
-			mStats.SetTitle("Aktivitats-Log")
+			mStats.SetTitle(l.MenuStats)
 		}
 	}
 }
@@ -150,62 +149,53 @@ func onReady() {
 	go func() {
 		s := wach.LoadSettings()
 		w := wach.GetInstance()
+		l := w.GetLocale()
 
 		systray.SetTitle("")
-		systray.SetTooltip("Wach - Mac bleibt wach")
+		systray.SetTooltip(w.StatusText())
 		systray.SetTemplateIcon(icon.IconOpen, icon.IconOpen)
 
-		// Status (non-clickable)
-		mStatus = systray.AddMenuItem("Wach", "Status")
+		mStatus = systray.AddMenuItem("Wach", "")
 		mStatus.Disable()
 		systray.AddSeparator()
 
-		// Start / Stop
-		mStart = systray.AddMenuItem("Start", "Mausbewegung starten")
-		mStop = systray.AddMenuItem("Stop", "Mausbewegung stoppen")
+		mStart = systray.AddMenuItem(l.MenuStart, l.TipStart)
+		mStop = systray.AddMenuItem(l.MenuStop, l.TipStop)
 
 		systray.AddSeparator()
 
-		// Idle time submenu
-		mIdle := systray.AddMenuItem("Idle-Zeit", "Leerlauf bis Mausbewegung")
-		mIdle30 = mIdle.AddSubMenuItem("30 Sekunden", "")
-		mIdle60 = mIdle.AddSubMenuItem("60 Sekunden", "")
-		mIdle120 = mIdle.AddSubMenuItem("2 Minuten", "")
-		mIdle300 = mIdle.AddSubMenuItem("5 Minuten", "")
+		mIdle := systray.AddMenuItem(l.MenuIdleTime, l.TipIdle)
+		mIdle30 = mIdle.AddSubMenuItem(l.Idle30, "")
+		mIdle60 = mIdle.AddSubMenuItem(l.Idle60, "")
+		mIdle120 = mIdle.AddSubMenuItem(l.Idle120, "")
+		mIdle300 = mIdle.AddSubMenuItem(l.Idle300, "")
 
-		// Move distance submenu
-		mMove := systray.AddMenuItem("Bewegung", "Pixel pro Mausbewegung")
-		mMove1 = mMove.AddSubMenuItem("1 Pixel", "kaum sichtbar")
-		mMove5 = mMove.AddSubMenuItem("5 Pixel", "dezent")
-		mMove10 = mMove.AddSubMenuItem("10 Pixel", "standard")
-		mMove20 = mMove.AddSubMenuItem("20 Pixel", "deutlich")
+		mMove := systray.AddMenuItem(l.MenuMoveDist, l.TipMove)
+		mMove1 = mMove.AddSubMenuItem(l.Move1, "")
+		mMove5 = mMove.AddSubMenuItem(l.Move5, "")
+		mMove10 = mMove.AddSubMenuItem(l.Move10, "")
+		mMove20 = mMove.AddSubMenuItem(l.Move20, "")
 
 		systray.AddSeparator()
 
-		// Stats
-		mStats = systray.AddMenuItem("Aktivitats-Log", "")
+		mStats = systray.AddMenuItem(l.MenuStats, "")
 		mStats.Disable()
-		mResetStat = systray.AddMenuItem("Log zurucksetzen", "")
+		mResetStat = systray.AddMenuItem(l.MenuResetStats, "")
 
 		systray.AddSeparator()
 
-		// Toggles
-		mLogin = systray.AddMenuItem("Beim Anmelden starten", "LaunchAgent")
-		mBattery = systray.AddMenuItem("Batterie sparen", "Pausieren bei <20% Akku")
-		mSchedule = systray.AddMenuItem("Zeitplan aktiv", "Nur zu Arbeitszeiten")
-		mWorkdays = systray.AddMenuItem("Nur Werktage (Mo-Fr)", "")
+		mLogin = systray.AddMenuItem(l.MenuLogin, l.TipLogin)
+		mBattery = systray.AddMenuItem(l.MenuBattery, l.TipBattery)
+		mSchedule = systray.AddMenuItem(l.MenuSchedule, l.TipSchedule)
+		mWorkdays = systray.AddMenuItem(l.MenuWorkdays, l.TipWorkdays)
 
 		systray.AddSeparator()
 
-		// Info
-		mGitHub = systray.AddMenuItem("GitHub", "Projektseite offnen")
-		mAbout = systray.AddMenuItem("Uber Wach", "Info zur App")
-		mQuit = systray.AddMenuItem("Beenden", "Wach beenden")
+		mGitHub = systray.AddMenuItem(l.MenuGitHub, l.TipGitHub)
+		mAbout = systray.AddMenuItem(l.MenuAbout, l.TipAbout)
+		mQuit = systray.AddMenuItem(l.MenuQuit, l.TipQuit)
 
-		// Apply settings to menu
 		updateMenuFromSettings(s)
-
-		// Start automatically
 		applyLoginLaunch(s.StartAtLogin)
 
 		w.UpdateSettings(s)
@@ -213,7 +203,6 @@ func onReady() {
 		mStart.Disable()
 		mStop.Enable()
 
-		// Start status updater
 		go statusLoop(w)
 
 		for {
@@ -230,103 +219,62 @@ func onReady() {
 				w.Stop()
 				systray.SetTemplateIcon(icon.IconClosed, icon.IconClosed)
 
-			// Idle time
 			case <-mIdle30.ClickedCh:
-				s := w.GetSettings()
-				s.IdleSeconds = 30
-				w.UpdateSettings(s)
-				markIdle(30)
+				s := w.GetSettings(); s.IdleSeconds = 30
+				w.UpdateSettings(s); markIdle(30)
 
 			case <-mIdle60.ClickedCh:
-				s := w.GetSettings()
-				s.IdleSeconds = 60
-				w.UpdateSettings(s)
-				markIdle(60)
+				s := w.GetSettings(); s.IdleSeconds = 60
+				w.UpdateSettings(s); markIdle(60)
 
 			case <-mIdle120.ClickedCh:
-				s := w.GetSettings()
-				s.IdleSeconds = 120
-				w.UpdateSettings(s)
-				markIdle(120)
+				s := w.GetSettings(); s.IdleSeconds = 120
+				w.UpdateSettings(s); markIdle(120)
 
 			case <-mIdle300.ClickedCh:
-				s := w.GetSettings()
-				s.IdleSeconds = 300
-				w.UpdateSettings(s)
-				markIdle(300)
+				s := w.GetSettings(); s.IdleSeconds = 300
+				w.UpdateSettings(s); markIdle(300)
 
-			// Move distance
 			case <-mMove1.ClickedCh:
-				s := w.GetSettings()
-				s.MovePixels = 1
-				w.UpdateSettings(s)
-				markMove(1)
+				s := w.GetSettings(); s.MovePixels = 1
+				w.UpdateSettings(s); markMove(1)
 
 			case <-mMove5.ClickedCh:
-				s := w.GetSettings()
-				s.MovePixels = 5
-				w.UpdateSettings(s)
-				markMove(5)
+				s := w.GetSettings(); s.MovePixels = 5
+				w.UpdateSettings(s); markMove(5)
 
 			case <-mMove10.ClickedCh:
-				s := w.GetSettings()
-				s.MovePixels = 10
-				w.UpdateSettings(s)
-				markMove(10)
+				s := w.GetSettings(); s.MovePixels = 10
+				w.UpdateSettings(s); markMove(10)
 
 			case <-mMove20.ClickedCh:
-				s := w.GetSettings()
-				s.MovePixels = 20
-				w.UpdateSettings(s)
-				markMove(20)
+				s := w.GetSettings(); s.MovePixels = 20
+				w.UpdateSettings(s); markMove(20)
 
-			// Toggles
 			case <-mLogin.ClickedCh:
-				s := w.GetSettings()
-				s.StartAtLogin = !s.StartAtLogin
+				s := w.GetSettings(); s.StartAtLogin = !s.StartAtLogin
 				applyLoginLaunch(s.StartAtLogin)
 				w.UpdateSettings(s)
-				if s.StartAtLogin {
-					mLogin.Check()
-				} else {
-					mLogin.Uncheck()
-				}
+				if s.StartAtLogin { mLogin.Check() } else { mLogin.Uncheck() }
 
 			case <-mBattery.ClickedCh:
-				s := w.GetSettings()
-				s.BatterySave = !s.BatterySave
+				s := w.GetSettings(); s.BatterySave = !s.BatterySave
 				w.UpdateSettings(s)
-				if s.BatterySave {
-					mBattery.Check()
-				} else {
-					mBattery.Uncheck()
-				}
+				if s.BatterySave { mBattery.Check() } else { mBattery.Uncheck() }
 
 			case <-mSchedule.ClickedCh:
-				s := w.GetSettings()
-				s.ScheduleEnabled = !s.ScheduleEnabled
+				s := w.GetSettings(); s.ScheduleEnabled = !s.ScheduleEnabled
 				w.UpdateSettings(s)
-				if s.ScheduleEnabled {
-					mSchedule.Check()
-				} else {
-					mSchedule.Uncheck()
-				}
+				if s.ScheduleEnabled { mSchedule.Check() } else { mSchedule.Uncheck() }
 
 			case <-mWorkdays.ClickedCh:
-				s := w.GetSettings()
-				s.ScheduleWorkdays = !s.ScheduleWorkdays
+				s := w.GetSettings(); s.ScheduleWorkdays = !s.ScheduleWorkdays
 				w.UpdateSettings(s)
-				if s.ScheduleWorkdays {
-					mWorkdays.Check()
-				} else {
-					mWorkdays.Uncheck()
-				}
+				if s.ScheduleWorkdays { mWorkdays.Check() } else { mWorkdays.Uncheck() }
 
-			// Stats
 			case <-mResetStat.ClickedCh:
 				w.ResetStats()
 
-			// Info
 			case <-mGitHub.ClickedCh:
 				wach.OpenGitHub()
 
@@ -334,7 +282,6 @@ func onReady() {
 				wach.ShowAbout()
 
 			case <-mQuit.ClickedCh:
-				log.Info("beende wach")
 				w.Stop()
 				systray.Quit()
 				return
@@ -343,6 +290,4 @@ func onReady() {
 	}()
 }
 
-func onExit() {
-	log.Info("wach beendet")
-}
+func onExit() {}

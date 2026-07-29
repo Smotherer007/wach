@@ -35,6 +35,7 @@ type Wach struct {
 	mu       sync.Mutex
 	config   Config
 	settings Settings
+	locale   Locale
 	quit     chan struct{}
 	done     chan struct{}
 	state    *state
@@ -117,6 +118,11 @@ func (w *Wach) UpdateSettings(s Settings) {
 	}
 }
 
+// GetLocale returns the current locale.
+func (w *Wach) GetLocale() Locale {
+	return w.locale
+}
+
 // GetStats returns current activity statistics.
 func (w *Wach) GetStats() ActivityStats {
 	return w.state.getStats()
@@ -129,17 +135,19 @@ func (w *Wach) ResetStats() {
 
 // StatusText returns a human-readable status line.
 func (w *Wach) StatusText() string {
+	l := w.locale
 	if !w.state.isRunning() {
-		return "Wach - gestoppt"
+		return l.StatusStopped
 	}
 	stats := w.state.getStats()
 	last := w.state.getLastMoved()
 	if last.IsZero() {
-		return "Wach - aktiv, noch keine Bewegung"
+		return l.StatusActive + " - " + l.StatusNoMoveYet
 	}
 	idle := getIdleDuration().Round(time.Second)
-	return fmt.Sprintf("Wach - aktiv (%ds idle, heute %dx bewegt)", 
-		int(idle.Seconds()), stats.DailyMoves)
+	return fmt.Sprintf("%s (%d%s, %s)",
+		l.StatusActive, int(idle.Seconds()), l.StatusIdle,
+		fmt.Sprintf(l.StatusTodayMoves, stats.DailyMoves))
 }
 
 // IsWithinSchedule checks whether the current time falls within the configured schedule.
@@ -246,18 +254,14 @@ func (w *Wach) run() {
 				errCount = 0
 			} else {
 				errCount++
-				msg := fmt.Sprintf(
-					"Maus konnte nicht bewegt werden (Versuch %d/%d)\n"+
-						"Bitte Zuganglichkeit erlauben:\n"+
-						"Systemeinstellungen > Datenschutz > Bedienungshilfen > Wach",
-					errCount, ErrorAlertThreshold,
-				)
+				l := w.locale
+				msg := fmt.Sprintf(l.ErrNoPermissionMsg, errCount, ErrorAlertThreshold)
 				logger.Warn(msg)
 
 				if errCount >= ErrorAlertThreshold {
 					lastErr := w.state.getLastErrorTime()
 					if time.Since(lastErr) > ErrorAlertCooldown {
-						showAlert("Zuganglichkeit erforderlich", msg)
+						showAlert(l.ErrNoPermissionTitle, msg)
 						w.state.setLastError(time.Now())
 					}
 					errCount = 0
@@ -274,6 +278,7 @@ func (w *Wach) run() {
 }
 
 func init() {
+	lang := SystemLanguage()
 	global = &Wach{
 		config: Config{
 			IdleThreshold: DefaultIdleThreshold * time.Second,
@@ -281,6 +286,7 @@ func init() {
 			CheckInterval: DefaultCheckInterval * time.Second,
 		},
 		settings: DefaultSettings(),
+		locale:   GetLocale(lang),
 		state:    &state{},
 	}
 }

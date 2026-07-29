@@ -77,6 +77,7 @@ int getBatteryPercent() {
 void showAlert(const char* title, const char* msg);
 int isDarkMode();
 void openURL(const char* url);
+const char* systemLanguage();
 */
 import "C"
 
@@ -118,6 +119,13 @@ func IsDarkMode() bool {
 	return C.isDarkMode() == 1
 }
 
+// SystemLanguage returns the user's preferred language code (e.g. "de", "en", "fr").
+func SystemLanguage() string {
+	cstr := C.systemLanguage()
+	defer C.free(unsafe.Pointer(cstr))
+	return C.GoString(cstr)
+}
+
 func showAlert(title, msg string) {
 	cTitle := C.CString(title)
 	cMsg := C.CString(msg)
@@ -135,13 +143,7 @@ func OpenGitHub() {
 
 // ShowAbout displays the About dialog with version info.
 func ShowAbout() {
-	msg := fmt.Sprintf(
-		"Version %s\n\n"+
-			"Ein minimaler Mausbeweger fur macOS (Apple Silicon).\n"+
-			"Halt den Mac wach, indem er bei Inaktivitat die Maus bewegt.\n\n"+
-			"(c) %s\n%s\n\n"+
-			"Inspiriert von:\n%s",
-		AppVersion, AppAuthor, AppSource, AppBasedOn,
-	)
-	showAlert("Uber Wach", msg)
+	l := global.locale
+	msg := fmt.Sprintf(l.AboutMsg, AppVersion, l.AboutAuthor, l.AboutSource)
+	showAlert(l.AboutTitle, msg)
 }

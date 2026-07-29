@@ -3,6 +3,7 @@
 
 #import <CoreFoundation/CoreFoundation.h>
 #import <Cocoa/Cocoa.h>
+#import <string.h>
 
 // Thread-safe alert using CoreFoundation (no main thread requirement)
 void showAlert(const char* title, const char* msg) {
@@ -31,5 +32,17 @@ int isDarkMode() {
 	@autoreleasepool {
 		NSString *style = [[NSUserDefaults standardUserDefaults] stringForKey:@"AppleInterfaceStyle"];
 		return [style isEqualToString:@"Dark"] ? 1 : 0;
+	}
+}
+
+const char* systemLanguage() {
+	@autoreleasepool {
+		NSString *lang = [[NSLocale preferredLanguages] firstObject];
+		if (lang == nil) return "en";
+		// Extract language code (e.g. "de-DE" -> "de")
+		NSArray *parts = [lang componentsSeparatedByString:@"-"];
+		NSString *code = [parts firstObject];
+		if (code == nil) return "en";
+		return strdup([code UTF8String]);
 	}
 }
