@@ -29,13 +29,19 @@ Every 10 seconds, Wach checks the system idle time using the CoreGraphics API. I
 
 ## Installation
 
+### Download
+
+Download the latest `Wach.app.zip` from the [Releases](https://github.com/Smotherer007/wach/releases) page, unzip it, and move `Wach.app` to your Applications folder.
+
+### Build from source
+
 ```bash
 git clone git@github.com:Smotherer007/wach.git
 cd wach
 make install
 ```
 
-This builds the app and copies it to /Applications/. You can also run `make run` to start directly from the terminal without creating an app bundle.
+You can also run `make run` to start directly from the terminal without creating an app bundle.
 
 ## First Launch
 
