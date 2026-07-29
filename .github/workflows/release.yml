@@ -5,6 +5,9 @@ on:
     tags:
       - "v*"
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: macos-latest
@@ -34,7 +37,7 @@ jobs:
             -ov -format UDZO \
             bin/Wach.dmg
 
-      - name: Create Release
+      - name: Upload Release Asset
         uses: softprops/action-gh-release@v2
         with:
           files: bin/Wach.dmg
