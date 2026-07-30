@@ -203,7 +203,7 @@
     ]
   },
   "cmd/main.go": {
-    "hash": "f136e969ea121432",
+    "hash": "681c9696a2d6172e",
     "nodes": [
       {
         "id": "cmd_main_file",
@@ -212,33 +212,344 @@
         "sourceFile": "cmd/main.go"
       },
       {
+        "id": "cmd_main_markIdle",
+        "label": "markIdle",
+        "type": "function",
+        "sourceFile": "cmd/main.go",
+        "sourceLocation": "L36"
+      },
+      {
+        "id": "cmd_main_markMove",
+        "label": "markMove",
+        "type": "function",
+        "sourceFile": "cmd/main.go",
+        "sourceLocation": "L52"
+      },
+      {
+        "id": "cmd_main_updateMenuFromSettings",
+        "label": "updateMenuFromSettings",
+        "type": "function",
+        "sourceFile": "cmd/main.go",
+        "sourceLocation": "L68"
+      },
+      {
+        "id": "cmd_main_statusLoop",
+        "label": "statusLoop",
+        "type": "function",
+        "sourceFile": "cmd/main.go",
+        "sourceLocation": "L93"
+      },
+      {
+        "id": "cmd_main_applyLoginLaunch",
+        "label": "applyLoginLaunch",
+        "type": "function",
+        "sourceFile": "cmd/main.go",
+        "sourceLocation": "L112"
+      },
+      {
         "id": "cmd_main_main",
         "label": "main",
         "type": "function",
         "sourceFile": "cmd/main.go",
-        "sourceLocation": "L10"
+        "sourceLocation": "L144"
       },
       {
         "id": "cmd_main_onReady",
         "label": "onReady",
         "type": "function",
         "sourceFile": "cmd/main.go",
-        "sourceLocation": "L14"
+        "sourceLocation": "L148"
       },
       {
         "id": "cmd_main_onExit",
         "label": "onExit",
         "type": "function",
         "sourceFile": "cmd/main.go",
-        "sourceLocation": "L66"
+        "sourceLocation": "L293"
       }
     ],
     "edges": [
       {
         "source": "cmd_main_file",
-        "target": "cmd_main_log",
-        "relation": "imports",
+        "target": "cmd_main_markIdle",
+        "relation": "contains",
         "confidence": "EXTRACTED"
+      },
+      {
+        "source": "cmd_main_markIdle",
+        "target": "cmd_main_item_Uncheck",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_markIdle",
+        "target": "cmd_main_mIdle30_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_markIdle",
+        "target": "cmd_main_mIdle60_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_markIdle",
+        "target": "cmd_main_mIdle120_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_markIdle",
+        "target": "cmd_main_mIdle300_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_file",
+        "target": "cmd_main_markMove",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "cmd_main_markMove",
+        "target": "cmd_main_item_Uncheck",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_markMove",
+        "target": "cmd_main_mMove1_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_markMove",
+        "target": "cmd_main_mMove5_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_markMove",
+        "target": "cmd_main_mMove10_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_markMove",
+        "target": "cmd_main_mMove20_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_file",
+        "target": "cmd_main_updateMenuFromSettings",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "cmd_main_updateMenuFromSettings",
+        "target": "cmd_main_markIdle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_updateMenuFromSettings",
+        "target": "cmd_main_markMove",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_updateMenuFromSettings",
+        "target": "cmd_main_mLogin_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_updateMenuFromSettings",
+        "target": "cmd_main_mLogin_Uncheck",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_updateMenuFromSettings",
+        "target": "cmd_main_mBattery_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_updateMenuFromSettings",
+        "target": "cmd_main_mBattery_Uncheck",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_updateMenuFromSettings",
+        "target": "cmd_main_mSchedule_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_updateMenuFromSettings",
+        "target": "cmd_main_mSchedule_Uncheck",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_updateMenuFromSettings",
+        "target": "cmd_main_mWorkdays_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_updateMenuFromSettings",
+        "target": "cmd_main_mWorkdays_Uncheck",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_file",
+        "target": "cmd_main_statusLoop",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "cmd_main_statusLoop",
+        "target": "cmd_main_w_GetLocale",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_statusLoop",
+        "target": "cmd_main_time_NewTicker",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_statusLoop",
+        "target": "cmd_main_ticker_Stop",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_statusLoop",
+        "target": "cmd_main_w_StatusText",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_statusLoop",
+        "target": "cmd_main_mStatus_SetTitle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_statusLoop",
+        "target": "cmd_main_systray_SetTooltip",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_statusLoop",
+        "target": "cmd_main_w_GetStats",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_statusLoop",
+        "target": "cmd_main_time_Duration_stats_TotalDuration__Round",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_statusLoop",
+        "target": "cmd_main_time_Duration",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_statusLoop",
+        "target": "cmd_main_mStats_SetTitle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_statusLoop",
+        "target": "cmd_main_fmt_Sprintf",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_statusLoop",
+        "target": "cmd_main_mStats_SetTitle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_file",
+        "target": "cmd_main_applyLoginLaunch",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "cmd_main_applyLoginLaunch",
+        "target": "cmd_main_os_UserHomeDir",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_applyLoginLaunch",
+        "target": "cmd_main_os_MkdirAll",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_applyLoginLaunch",
+        "target": "cmd_main_os_WriteFile",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_applyLoginLaunch",
+        "target": "cmd_main_os_Remove",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
       },
       {
         "source": "cmd_main_file",
@@ -261,7 +572,28 @@
       },
       {
         "source": "cmd_main_onReady",
-        "target": "cmd_main_func_______systray_SetTitle_______systray_SetTooltip__Wach___Mac_bleibt_wach______mAbout____systray_AddMenuItem__Uber_Wach____Info_zur_App_____systray_AddSeparator______mStart____systray_AddMenuItem__Start____Mausbewegung_starten_____mStop____systray_AddMenuItem__Stop____Mausbewegung_stoppen_____mStop_Disable______systray_AddSeparator_____mQuit____systray_AddMenuItem__Beenden____Wach_beenden______w____wach_GetInstance_____w_Start_____mStart_Disable_____mStop_Enable________Offenes_Auge___aktiv___systray_SetTemplateIcon_icon_IconOpen__icon_IconOpen_____for______select______case___mStart_ClickedCh______log_Info__starte_wach_______w_Start_______mStart_Disable_______mStop_Enable_______systray_SetTemplateIcon_icon_IconOpen__icon_IconOpen______case___mStop_ClickedCh______log_Info__stoppe_wach_______mStart_Enable_______mStop_Disable_______w_Stop__________Geschlossenes_Auge___gestoppt_____systray_SetTemplateIcon_icon_IconClosed__icon_IconClosed______case___mQuit_ClickedCh______log_Info__beende_wach_______w_Stop_______systray_Quit_______return_____case___mAbout_ClickedCh______wach_ShowAbout______________",
+        "target": "cmd_main_func_______s____wach_LoadSettings_____w____wach_GetInstance_____l____w_GetLocale______systray_SetTitle_______systray_SetTooltip_w_StatusText______systray_SetTemplateIcon_icon_IconOpen__icon_IconOpen_____mStatus___systray_AddMenuItem__Wach_________mStatus_Disable_____systray_AddSeparator______mStart___systray_AddMenuItem_l_MenuStart__l_TipStart____mStop___systray_AddMenuItem_l_MenuStop__l_TipStop_____systray_AddSeparator______mIdle____systray_AddMenuItem_l_MenuIdleTime__l_TipIdle____mIdle30___mIdle_AddSubMenuItem_l_Idle30________mIdle60___mIdle_AddSubMenuItem_l_Idle60________mIdle120___mIdle_AddSubMenuItem_l_Idle120________mIdle300___mIdle_AddSubMenuItem_l_Idle300_________mMove____systray_AddMenuItem_l_MenuMoveDist__l_TipMove____mMove1___mMove_AddSubMenuItem_l_Move1________mMove5___mMove_AddSubMenuItem_l_Move5________mMove10___mMove_AddSubMenuItem_l_Move10________mMove20___mMove_AddSubMenuItem_l_Move20_________systray_AddSeparator______mStats___systray_AddMenuItem_l_MenuStats________mStats_Disable_____mResetStat___systray_AddMenuItem_l_MenuResetStats_________systray_AddSeparator______mLogin___systray_AddMenuItem_l_MenuLogin__l_TipLogin____mBattery___systray_AddMenuItem_l_MenuBattery__l_TipBattery____mSchedule___systray_AddMenuItem_l_MenuSchedule__l_TipSchedule____mWorkdays___systray_AddMenuItem_l_MenuWorkdays__l_TipWorkdays_____systray_AddSeparator______mGitHub___systray_AddMenuItem_l_MenuGitHub__l_TipGitHub____mAbout___systray_AddMenuItem_l_MenuAbout__l_TipAbout____mQuit___systray_AddMenuItem_l_MenuQuit__l_TipQuit_____updateMenuFromSettings_s____applyLoginLaunch_s_StartAtLogin_____w_UpdateSettings_s____w_Start_____mStart_Disable_____mStop_Enable______go_statusLoop_w_____for______select______case___mStart_ClickedCh______w_Start_______mStart_Disable_______mStop_Enable_______systray_SetTemplateIcon_icon_IconOpen__icon_IconOpen______case___mStop_ClickedCh______mStart_Enable_______mStop_Disable_______w_Stop_______systray_SetTemplateIcon_icon_IconClosed__icon_IconClosed______case___mIdle30_ClickedCh______s____w_GetSettings____s_IdleSeconds___30_____w_UpdateSettings_s___markIdle_30______case___mIdle60_ClickedCh______s____w_GetSettings____s_IdleSeconds___60_____w_UpdateSettings_s___markIdle_60______case___mIdle120_ClickedCh______s____w_GetSettings____s_IdleSeconds___120_____w_UpdateSettings_s___markIdle_120______case___mIdle300_ClickedCh______s____w_GetSettings____s_IdleSeconds___300_____w_UpdateSettings_s___markIdle_300______case___mMove1_ClickedCh______s____w_GetSettings____s_MovePixels___1_____w_UpdateSettings_s___markMove_1______case___mMove5_ClickedCh______s____w_GetSettings____s_MovePixels___5_____w_UpdateSettings_s___markMove_5______case___mMove10_ClickedCh______s____w_GetSettings____s_MovePixels___10_____w_UpdateSettings_s___markMove_10______case___mMove20_ClickedCh______s____w_GetSettings____s_MovePixels___20_____w_UpdateSettings_s___markMove_20______case___mLogin_ClickedCh______s____w_GetSettings____s_StartAtLogin____s_StartAtLogin_____applyLoginLaunch_s_StartAtLogin______w_UpdateSettings_s______if_s_StartAtLogin___mLogin_Check_____else___mLogin_Uncheck_________case___mBattery_ClickedCh______s____w_GetSettings____s_BatterySave____s_BatterySave_____w_UpdateSettings_s______if_s_BatterySave___mBattery_Check_____else___mBattery_Uncheck_________case___mSchedule_ClickedCh______s____w_GetSettings____s_ScheduleEnabled____s_ScheduleEnabled_____w_UpdateSettings_s______if_s_ScheduleEnabled___mSchedule_Check_____else___mSchedule_Uncheck_________case___mWorkdays_ClickedCh______s____w_GetSettings____s_ScheduleWorkdays____s_ScheduleWorkdays_____w_UpdateSettings_s______if_s_ScheduleWorkdays___mWorkdays_Check_____else___mWorkdays_Uncheck_________case___mResetStat_ClickedCh______w_ResetStats_______case___mGitHub_ClickedCh______wach_OpenGitHub_______case___mAbout_ClickedCh______wach_ShowAbout_______case___mQuit_ClickedCh______w_Stop_______systray_Quit_______return____________",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_wach_LoadSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_wach_GetInstance",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_GetLocale",
         "relation": "calls",
         "confidence": "INFERRED",
         "confidenceScore": 0.85
@@ -282,6 +614,153 @@
       },
       {
         "source": "cmd_main_onReady",
+        "target": "cmd_main_w_StatusText",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_SetTemplateIcon",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mStatus_Disable",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddSeparator",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddSeparator",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mIdle_AddSubMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mIdle_AddSubMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mIdle_AddSubMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mIdle_AddSubMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mMove_AddSubMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mMove_AddSubMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mMove_AddSubMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mMove_AddSubMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddSeparator",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mStats_Disable",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
         "target": "cmd_main_systray_AddMenuItem",
         "relation": "calls",
         "confidence": "INFERRED",
@@ -310,7 +789,14 @@
       },
       {
         "source": "cmd_main_onReady",
-        "target": "cmd_main_mStop_Disable",
+        "target": "cmd_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddMenuItem",
         "relation": "calls",
         "confidence": "INFERRED",
         "confidenceScore": 0.85
@@ -331,7 +817,63 @@
       },
       {
         "source": "cmd_main_onReady",
-        "target": "cmd_main_wach_GetInstance",
+        "target": "cmd_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_systray_AddMenuItem",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_updateMenuFromSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_applyLoginLaunch",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_UpdateSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_Start",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mStart_Disable",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mStop_Enable",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_statusLoop",
         "relation": "calls",
         "confidence": "INFERRED",
         "confidenceScore": 0.85
@@ -360,48 +902,6 @@
       {
         "source": "cmd_main_onReady",
         "target": "cmd_main_systray_SetTemplateIcon",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
-      },
-      {
-        "source": "cmd_main_onReady",
-        "target": "cmd_main_log_Info",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
-      },
-      {
-        "source": "cmd_main_onReady",
-        "target": "cmd_main_w_Start",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
-      },
-      {
-        "source": "cmd_main_onReady",
-        "target": "cmd_main_mStart_Disable",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
-      },
-      {
-        "source": "cmd_main_onReady",
-        "target": "cmd_main_mStop_Enable",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
-      },
-      {
-        "source": "cmd_main_onReady",
-        "target": "cmd_main_systray_SetTemplateIcon",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
-      },
-      {
-        "source": "cmd_main_onReady",
-        "target": "cmd_main_log_Info",
         "relation": "calls",
         "confidence": "INFERRED",
         "confidenceScore": 0.85
@@ -436,7 +936,308 @@
       },
       {
         "source": "cmd_main_onReady",
-        "target": "cmd_main_log_Info",
+        "target": "cmd_main_w_GetSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_UpdateSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_markIdle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_GetSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_UpdateSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_markIdle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_GetSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_UpdateSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_markIdle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_GetSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_UpdateSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_markIdle",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_GetSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_UpdateSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_markMove",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_GetSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_UpdateSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_markMove",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_GetSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_UpdateSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_markMove",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_GetSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_UpdateSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_markMove",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_GetSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_applyLoginLaunch",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_UpdateSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mLogin_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mLogin_Uncheck",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_GetSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_UpdateSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mBattery_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mBattery_Uncheck",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_GetSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_UpdateSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mSchedule_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mSchedule_Uncheck",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_GetSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_UpdateSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mWorkdays_Check",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_mWorkdays_Uncheck",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_w_ResetStats",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_wach_OpenGitHub",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "cmd_main_onReady",
+        "target": "cmd_main_wach_ShowAbout",
         "relation": "calls",
         "confidence": "INFERRED",
         "confidenceScore": 0.85
@@ -456,24 +1257,10 @@
         "confidenceScore": 0.85
       },
       {
-        "source": "cmd_main_onReady",
-        "target": "cmd_main_wach_ShowAbout",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
-      },
-      {
         "source": "cmd_main_file",
         "target": "cmd_main_onExit",
         "relation": "contains",
         "confidence": "EXTRACTED"
-      },
-      {
-        "source": "cmd_main_onExit",
-        "target": "cmd_main_log_Info",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
       }
     ]
   },
@@ -3585,7 +4372,7 @@
     ]
   },
   "pkg/wach/cgo_darwin.go": {
-    "hash": "75b93bae94955ff8",
+    "hash": "93872741e94b7c37",
     "nodes": [
       {
         "id": "pkg_wach_cgo_darwin_file",
@@ -3598,42 +4385,63 @@
         "label": "getIdleDuration",
         "type": "function",
         "sourceFile": "pkg/wach/cgo_darwin.go",
-        "sourceLocation": "L72"
+        "sourceLocation": "L101"
       },
       {
         "id": "pkg_wach_cgo_darwin_tryMoveMouse",
         "label": "tryMoveMouse",
         "type": "function",
         "sourceFile": "pkg/wach/cgo_darwin.go",
-        "sourceLocation": "L78"
+        "sourceLocation": "L105"
       },
       {
         "id": "pkg_wach_cgo_darwin_isDisplayAsleep",
         "label": "isDisplayAsleep",
         "type": "function",
         "sourceFile": "pkg/wach/cgo_darwin.go",
-        "sourceLocation": "L83"
+        "sourceLocation": "L109"
       },
       {
-        "id": "pkg_wach_cgo_darwin_showAlert",
-        "label": "showAlert",
+        "id": "pkg_wach_cgo_darwin_getBatteryPercent",
+        "label": "getBatteryPercent",
         "type": "function",
         "sourceFile": "pkg/wach/cgo_darwin.go",
-        "sourceLocation": "L88"
+        "sourceLocation": "L114"
       },
       {
         "id": "pkg_wach_cgo_darwin_IsDarkMode",
         "label": "IsDarkMode",
         "type": "function",
         "sourceFile": "pkg/wach/cgo_darwin.go",
-        "sourceLocation": "L97"
+        "sourceLocation": "L118"
+      },
+      {
+        "id": "pkg_wach_cgo_darwin_SystemLanguage",
+        "label": "SystemLanguage",
+        "type": "function",
+        "sourceFile": "pkg/wach/cgo_darwin.go",
+        "sourceLocation": "L123"
+      },
+      {
+        "id": "pkg_wach_cgo_darwin_showAlert",
+        "label": "showAlert",
+        "type": "function",
+        "sourceFile": "pkg/wach/cgo_darwin.go",
+        "sourceLocation": "L129"
+      },
+      {
+        "id": "pkg_wach_cgo_darwin_OpenGitHub",
+        "label": "OpenGitHub",
+        "type": "function",
+        "sourceFile": "pkg/wach/cgo_darwin.go",
+        "sourceLocation": "L138"
       },
       {
         "id": "pkg_wach_cgo_darwin_ShowAbout",
         "label": "ShowAbout",
         "type": "function",
         "sourceFile": "pkg/wach/cgo_darwin.go",
-        "sourceLocation": "L102"
+        "sourceLocation": "L145"
       }
     ],
     "edges": [
@@ -3645,6 +4453,13 @@
       },
       {
         "source": "pkg_wach_cgo_darwin_getIdleDuration",
+        "target": "pkg_wach_cgo_darwin_time_Duration",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_getIdleDuration",
         "target": "pkg_wach_cgo_darwin_float64",
         "relation": "calls",
         "confidence": "INFERRED",
@@ -3653,13 +4468,6 @@
       {
         "source": "pkg_wach_cgo_darwin_getIdleDuration",
         "target": "pkg_wach_cgo_darwin_C_getIdleSeconds",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
-      },
-      {
-        "source": "pkg_wach_cgo_darwin_getIdleDuration",
-        "target": "pkg_wach_cgo_darwin_time_Duration",
         "relation": "calls",
         "confidence": "INFERRED",
         "confidenceScore": 0.85
@@ -3707,6 +4515,73 @@
       {
         "source": "pkg_wach_cgo_darwin_isDisplayAsleep",
         "target": "pkg_wach_cgo_darwin_C_isDisplayAsleep",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_file",
+        "target": "pkg_wach_cgo_darwin_getBatteryPercent",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_getBatteryPercent",
+        "target": "pkg_wach_cgo_darwin_int",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_getBatteryPercent",
+        "target": "pkg_wach_cgo_darwin_C_getBatteryPercent",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_file",
+        "target": "pkg_wach_cgo_darwin_IsDarkMode",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_IsDarkMode",
+        "target": "pkg_wach_cgo_darwin_C_isDarkMode",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_file",
+        "target": "pkg_wach_cgo_darwin_SystemLanguage",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_SystemLanguage",
+        "target": "pkg_wach_cgo_darwin_C_systemLanguage",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_SystemLanguage",
+        "target": "pkg_wach_cgo_darwin_C_free",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_SystemLanguage",
+        "target": "pkg_wach_cgo_darwin_unsafe_Pointer",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_SystemLanguage",
+        "target": "pkg_wach_cgo_darwin_C_GoString",
         "relation": "calls",
         "confidence": "INFERRED",
         "confidenceScore": 0.85
@@ -3768,13 +4643,34 @@
       },
       {
         "source": "pkg_wach_cgo_darwin_file",
-        "target": "pkg_wach_cgo_darwin_IsDarkMode",
+        "target": "pkg_wach_cgo_darwin_OpenGitHub",
         "relation": "contains",
         "confidence": "EXTRACTED"
       },
       {
-        "source": "pkg_wach_cgo_darwin_IsDarkMode",
-        "target": "pkg_wach_cgo_darwin_C_isDarkMode",
+        "source": "pkg_wach_cgo_darwin_OpenGitHub",
+        "target": "pkg_wach_cgo_darwin_C_CString",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_OpenGitHub",
+        "target": "pkg_wach_cgo_darwin_C_openURL",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_OpenGitHub",
+        "target": "pkg_wach_cgo_darwin_C_free",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_cgo_darwin_OpenGitHub",
+        "target": "pkg_wach_cgo_darwin_unsafe_Pointer",
         "relation": "calls",
         "confidence": "INFERRED",
         "confidenceScore": 0.85
@@ -3909,7 +4805,7 @@
     ]
   },
   "pkg/wach/state.go": {
-    "hash": "71623544768545b4",
+    "hash": "d673995ea799c943",
     "nodes": [
       {
         "id": "pkg_wach_state_file",
@@ -3929,49 +4825,63 @@
         "label": "state.reset",
         "type": "method",
         "sourceFile": "pkg/wach/state.go",
-        "sourceLocation": "L18"
+        "sourceLocation": "L19"
       },
       {
         "id": "pkg_wach_state_state_isRunning",
         "label": "state.isRunning",
         "type": "method",
         "sourceFile": "pkg/wach/state.go",
-        "sourceLocation": "L26"
+        "sourceLocation": "L27"
       },
       {
         "id": "pkg_wach_state_state_setRunning",
         "label": "state.setRunning",
         "type": "method",
         "sourceFile": "pkg/wach/state.go",
-        "sourceLocation": "L32"
+        "sourceLocation": "L33"
       },
       {
         "id": "pkg_wach_state_state_getLastMoved",
         "label": "state.getLastMoved",
         "type": "method",
         "sourceFile": "pkg/wach/state.go",
-        "sourceLocation": "L38"
+        "sourceLocation": "L42"
       },
       {
         "id": "pkg_wach_state_state_setLastMoved",
         "label": "state.setLastMoved",
         "type": "method",
         "sourceFile": "pkg/wach/state.go",
-        "sourceLocation": "L44"
+        "sourceLocation": "L48"
       },
       {
         "id": "pkg_wach_state_state_getLastErrorTime",
         "label": "state.getLastErrorTime",
         "type": "method",
         "sourceFile": "pkg/wach/state.go",
-        "sourceLocation": "L50"
+        "sourceLocation": "L65"
       },
       {
         "id": "pkg_wach_state_state_setLastError",
         "label": "state.setLastError",
         "type": "method",
         "sourceFile": "pkg/wach/state.go",
-        "sourceLocation": "L56"
+        "sourceLocation": "L71"
+      },
+      {
+        "id": "pkg_wach_state_state_getStats",
+        "label": "state.getStats",
+        "type": "method",
+        "sourceFile": "pkg/wach/state.go",
+        "sourceLocation": "L77"
+      },
+      {
+        "id": "pkg_wach_state_state_resetStats",
+        "label": "state.resetStats",
+        "type": "method",
+        "sourceFile": "pkg/wach/state.go",
+        "sourceLocation": "L83"
       }
     ],
     "edges": [
@@ -4022,11 +4932,23 @@
         "target": "pkg_wach_state_state_setLastError",
         "relation": "contains",
         "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_state_file",
+        "target": "pkg_wach_state_state_getStats",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_state_file",
+        "target": "pkg_wach_state_state_resetStats",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
       }
     ]
   },
   "pkg/wach/wach.go": {
-    "hash": "9eb4e6e6fa07f17e",
+    "hash": "b6fc98f7bb2f48c2",
     "nodes": [
       {
         "id": "pkg_wach_wach_file",
@@ -4039,75 +4961,125 @@
         "label": "Config",
         "type": "struct",
         "sourceFile": "pkg/wach/wach.go",
-        "sourceLocation": "L40"
-      },
-      {
-        "id": "pkg_wach_wach_DefaultConfig",
-        "label": "DefaultConfig",
-        "type": "function",
-        "sourceFile": "pkg/wach/wach.go",
-        "sourceLocation": "L47"
+        "sourceLocation": "L27"
       },
       {
         "id": "pkg_wach_wach_Wach",
         "label": "Wach",
         "type": "struct",
         "sourceFile": "pkg/wach/wach.go",
-        "sourceLocation": "L56"
+        "sourceLocation": "L34"
       },
       {
         "id": "pkg_wach_wach_GetInstance",
         "label": "GetInstance",
         "type": "function",
         "sourceFile": "pkg/wach/wach.go",
-        "sourceLocation": "L65"
+        "sourceLocation": "L45"
       },
       {
         "id": "pkg_wach_wach_Wach_Start",
         "label": "Wach.Start",
         "type": "method",
         "sourceFile": "pkg/wach/wach.go",
-        "sourceLocation": "L71"
+        "sourceLocation": "L51"
+      },
+      {
+        "id": "pkg_wach_wach_Wach_applySettings",
+        "label": "Wach.applySettings",
+        "type": "method",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L72"
       },
       {
         "id": "pkg_wach_wach_Wach_Stop",
         "label": "Wach.Stop",
         "type": "method",
         "sourceFile": "pkg/wach/wach.go",
-        "sourceLocation": "L90"
+        "sourceLocation": "L79"
       },
       {
         "id": "pkg_wach_wach_Wach_IsRunning",
         "label": "Wach.IsRunning",
         "type": "method",
         "sourceFile": "pkg/wach/wach.go",
-        "sourceLocation": "L111"
+        "sourceLocation": "L100"
+      },
+      {
+        "id": "pkg_wach_wach_Wach_GetSettings",
+        "label": "Wach.GetSettings",
+        "type": "method",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L108"
+      },
+      {
+        "id": "pkg_wach_wach_Wach_UpdateSettings",
+        "label": "Wach.UpdateSettings",
+        "type": "method",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L113"
+      },
+      {
+        "id": "pkg_wach_wach_Wach_GetLocale",
+        "label": "Wach.GetLocale",
+        "type": "method",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L122"
+      },
+      {
+        "id": "pkg_wach_wach_Wach_GetStats",
+        "label": "Wach.GetStats",
+        "type": "method",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L127"
+      },
+      {
+        "id": "pkg_wach_wach_Wach_ResetStats",
+        "label": "Wach.ResetStats",
+        "type": "method",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L132"
+      },
+      {
+        "id": "pkg_wach_wach_Wach_StatusText",
+        "label": "Wach.StatusText",
+        "type": "method",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L137"
+      },
+      {
+        "id": "pkg_wach_wach_Wach_IsWithinSchedule",
+        "label": "Wach.IsWithinSchedule",
+        "type": "method",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L154"
+      },
+      {
+        "id": "pkg_wach_wach_Wach_IsBatteryLow",
+        "label": "Wach.IsBatteryLow",
+        "type": "method",
+        "sourceFile": "pkg/wach/wach.go",
+        "sourceLocation": "L185"
       },
       {
         "id": "pkg_wach_wach_Wach_run",
         "label": "Wach.run",
         "type": "method",
         "sourceFile": "pkg/wach/wach.go",
-        "sourceLocation": "L119"
+        "sourceLocation": "L194"
       },
       {
         "id": "pkg_wach_wach_init",
         "label": "init",
         "type": "function",
         "sourceFile": "pkg/wach/wach.go",
-        "sourceLocation": "L191"
+        "sourceLocation": "L280"
       }
     ],
     "edges": [
       {
         "source": "pkg_wach_wach_file",
         "target": "pkg_wach_wach_Config",
-        "relation": "contains",
-        "confidence": "EXTRACTED"
-      },
-      {
-        "source": "pkg_wach_wach_file",
-        "target": "pkg_wach_wach_DefaultConfig",
         "relation": "contains",
         "confidence": "EXTRACTED"
       },
@@ -4138,6 +5110,12 @@
       },
       {
         "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_Wach_applySettings",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
         "target": "pkg_wach_wach_Wach_Stop",
         "relation": "contains",
         "confidence": "EXTRACTED"
@@ -4145,6 +5123,54 @@
       {
         "source": "pkg_wach_wach_file",
         "target": "pkg_wach_wach_Wach_IsRunning",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_Wach_GetSettings",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_Wach_UpdateSettings",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_Wach_GetLocale",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_Wach_GetStats",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_Wach_ResetStats",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_Wach_StatusText",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_Wach_IsWithinSchedule",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_wach_file",
+        "target": "pkg_wach_wach_Wach_IsBatteryLow",
         "relation": "contains",
         "confidence": "EXTRACTED"
       },
@@ -4162,7 +5188,21 @@
       },
       {
         "source": "pkg_wach_wach_init",
-        "target": "pkg_wach_wach_DefaultConfig",
+        "target": "pkg_wach_wach_SystemLanguage",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_init",
+        "target": "pkg_wach_wach_DefaultSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_wach_init",
+        "target": "pkg_wach_wach_GetLocale",
         "relation": "calls",
         "confidence": "INFERRED",
         "confidenceScore": 0.85
@@ -4170,7 +5210,7 @@
     ]
   },
   "pkg/wach/wach_test.go": {
-    "hash": "79a8b52b1e99b510",
+    "hash": "5550733ff9c85102",
     "nodes": [
       {
         "id": "pkg_wach_wach_test_file",
@@ -4403,13 +5443,6 @@
       },
       {
         "source": "pkg_wach_wach_test_TestDefaultConfig",
-        "target": "pkg_wach_wach_test_DefaultConfig",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
-      },
-      {
-        "source": "pkg_wach_wach_test_TestDefaultConfig",
         "target": "pkg_wach_wach_test_assert_Equal",
         "relation": "calls",
         "confidence": "INFERRED",
@@ -4461,13 +5494,6 @@
         "target": "pkg_wach_wach_test_TestStartStop",
         "relation": "contains",
         "confidence": "EXTRACTED"
-      },
-      {
-        "source": "pkg_wach_wach_test_TestStartStop",
-        "target": "pkg_wach_wach_test_DefaultConfig",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
       },
       {
         "source": "pkg_wach_wach_test_TestStartStop",
@@ -4575,13 +5601,6 @@
       },
       {
         "source": "pkg_wach_wach_test_TestStartStopMultipleCycles",
-        "target": "pkg_wach_wach_test_DefaultConfig",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
-      },
-      {
-        "source": "pkg_wach_wach_test_TestStartStopMultipleCycles",
         "target": "pkg_wach_wach_test_w_Start",
         "relation": "calls",
         "confidence": "INFERRED",
@@ -4634,13 +5653,6 @@
         "target": "pkg_wach_wach_test_TestStartWithNilQuitChannel",
         "relation": "contains",
         "confidence": "EXTRACTED"
-      },
-      {
-        "source": "pkg_wach_wach_test_TestStartWithNilQuitChannel",
-        "target": "pkg_wach_wach_test_DefaultConfig",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
       },
       {
         "source": "pkg_wach_wach_test_TestStartWithNilQuitChannel",
@@ -5239,13 +6251,6 @@
       },
       {
         "source": "pkg_wach_wach_test_TestConcurrentStartStop",
-        "target": "pkg_wach_wach_test_DefaultConfig",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
-      },
-      {
-        "source": "pkg_wach_wach_test_TestConcurrentStartStop",
         "target": "pkg_wach_wach_test_wg_Add",
         "relation": "calls",
         "confidence": "INFERRED",
@@ -5581,13 +6586,6 @@
       },
       {
         "source": "pkg_wach_wach_test_TestIsRunningOnFreshInstance",
-        "target": "pkg_wach_wach_test_DefaultConfig",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
-      },
-      {
-        "source": "pkg_wach_wach_test_TestIsRunningOnFreshInstance",
         "target": "pkg_wach_wach_test_assert_False",
         "relation": "calls",
         "confidence": "INFERRED",
@@ -5605,13 +6603,6 @@
         "target": "pkg_wach_wach_test_TestMultipleStopsAfterStart",
         "relation": "contains",
         "confidence": "EXTRACTED"
-      },
-      {
-        "source": "pkg_wach_wach_test_TestMultipleStopsAfterStart",
-        "target": "pkg_wach_wach_test_DefaultConfig",
-        "relation": "calls",
-        "confidence": "INFERRED",
-        "confidenceScore": 0.85
       },
       {
         "source": "pkg_wach_wach_test_TestMultipleStopsAfterStart",
@@ -5656,5 +6647,217 @@
         "confidenceScore": 0.85
       }
     ]
+  },
+  "pkg/wach/config.go": {
+    "hash": "3cd510d9b8e33493",
+    "nodes": [
+      {
+        "id": "pkg_wach_config_file",
+        "label": "pkg/wach/config.go",
+        "type": "file",
+        "sourceFile": "pkg/wach/config.go"
+      },
+      {
+        "id": "pkg_wach_config_Settings",
+        "label": "Settings",
+        "type": "struct",
+        "sourceFile": "pkg/wach/config.go",
+        "sourceLocation": "L11"
+      },
+      {
+        "id": "pkg_wach_config_ActivityStats",
+        "label": "ActivityStats",
+        "type": "struct",
+        "sourceFile": "pkg/wach/config.go",
+        "sourceLocation": "L24"
+      },
+      {
+        "id": "pkg_wach_config_DefaultSettings",
+        "label": "DefaultSettings",
+        "type": "function",
+        "sourceFile": "pkg/wach/config.go",
+        "sourceLocation": "L32"
+      },
+      {
+        "id": "pkg_wach_config_init",
+        "label": "init",
+        "type": "function",
+        "sourceFile": "pkg/wach/config.go",
+        "sourceLocation": "L43"
+      },
+      {
+        "id": "pkg_wach_config_LoadSettings",
+        "label": "LoadSettings",
+        "type": "function",
+        "sourceFile": "pkg/wach/config.go",
+        "sourceLocation": "L53"
+      },
+      {
+        "id": "pkg_wach_config_SaveSettings",
+        "label": "SaveSettings",
+        "type": "function",
+        "sourceFile": "pkg/wach/config.go",
+        "sourceLocation": "L74"
+      }
+    ],
+    "edges": [
+      {
+        "source": "pkg_wach_config_file",
+        "target": "pkg_wach_config_Settings",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_config_file",
+        "target": "pkg_wach_config_ActivityStats",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_config_file",
+        "target": "pkg_wach_config_DefaultSettings",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_config_file",
+        "target": "pkg_wach_config_init",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_config_init",
+        "target": "pkg_wach_config_os_UserHomeDir",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_config_init",
+        "target": "pkg_wach_config_filepath_Join",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_config_init",
+        "target": "pkg_wach_config_os_MkdirAll",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_config_init",
+        "target": "pkg_wach_config_filepath_Join",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_config_file",
+        "target": "pkg_wach_config_LoadSettings",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_config_LoadSettings",
+        "target": "pkg_wach_config_DefaultSettings",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_config_LoadSettings",
+        "target": "pkg_wach_config_os_ReadFile",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_config_LoadSettings",
+        "target": "pkg_wach_config_json_Unmarshal",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_config_file",
+        "target": "pkg_wach_config_SaveSettings",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_config_SaveSettings",
+        "target": "pkg_wach_config_json_MarshalIndent",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      },
+      {
+        "source": "pkg_wach_config_SaveSettings",
+        "target": "pkg_wach_config_os_WriteFile",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  },
+  "pkg/wach/locale.go": {
+    "hash": "b0e5b640d921dd2a",
+    "nodes": [
+      {
+        "id": "pkg_wach_locale_file",
+        "label": "pkg/wach/locale.go",
+        "type": "file",
+        "sourceFile": "pkg/wach/locale.go"
+      },
+      {
+        "id": "pkg_wach_locale_Locale",
+        "label": "Locale",
+        "type": "struct",
+        "sourceFile": "pkg/wach/locale.go",
+        "sourceLocation": "L4"
+      },
+      {
+        "id": "pkg_wach_locale_GetLocale",
+        "label": "GetLocale",
+        "type": "function",
+        "sourceFile": "pkg/wach/locale.go",
+        "sourceLocation": "L60"
+      }
+    ],
+    "edges": [
+      {
+        "source": "pkg_wach_locale_file",
+        "target": "pkg_wach_locale_Locale",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_locale_file",
+        "target": "pkg_wach_locale_GetLocale",
+        "relation": "contains",
+        "confidence": "EXTRACTED"
+      },
+      {
+        "source": "pkg_wach_locale_GetLocale",
+        "target": "pkg_wach_locale_len",
+        "relation": "calls",
+        "confidence": "INFERRED",
+        "confidenceScore": 0.85
+      }
+    ]
+  },
+  "pkg/wach/translations.go": {
+    "hash": "2913380d894ad42b",
+    "nodes": [
+      {
+        "id": "pkg_wach_translations_file",
+        "label": "pkg/wach/translations.go",
+        "type": "file",
+        "sourceFile": "pkg/wach/translations.go"
+      }
+    ],
+    "edges": []
   }
 }

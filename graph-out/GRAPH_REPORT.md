@@ -4,17 +4,17 @@ Generated from `/Users/patrickweppelmann/Documents/Workspaces/wach`
 
 ## Corpus
 
-- **Files scanned:** 24
-- **Languages:** 23 .go, 1 .sh
+- **Files scanned:** 27
+- **Languages:** 26 .go, 1 .sh
 
 ## Graph Statistics
 
 | Metric | Value |
 |--------|-------|
-| Nodes | 172 |
-| Edges | 156 |
-| Communities | 24 |
-| Avg. Degree | 1.8 |
+| Nodes | 202 |
+| Edges | 352 |
+| Communities | 27 |
+| Avg. Degree | 3.5 |
 
 ## God Nodes
 
@@ -25,8 +25,8 @@ The most-connected entities - these are the architectural pillars:
 | 1 | **lib/systray/systray_windows.go** | file | 40 | `lib/systray/systray_windows.go` |
 | 2 | **lib/systray/systray.go** | file | 24 | `lib/systray/systray.go` |
 | 3 | **pkg/wach/wach_test.go** | file | 23 | `pkg/wach/wach_test.go` |
-| 4 | **lib/systray/systray_nonwindows.go** | file | 13 | `lib/systray/systray_nonwindows.go` |
-| 5 | **pkg/wach/wach.go** | file | 9 | `pkg/wach/wach.go` |
+| 4 | **pkg/wach/wach.go** | file | 18 | `pkg/wach/wach.go` |
+| 5 | **lib/systray/systray_nonwindows.go** | file | 13 | `lib/systray/systray_nonwindows.go` |
 
 ## Communities
 
@@ -37,12 +37,13 @@ The graph was partitioned into these subsystems:
 | **showMenuItem** | 41 | lib/systray/systray_windows.go, wndClassEx, wndClassEx.register |
 | **systrayMenuItemSelected** | 25 | lib/systray/systray.go, init, MenuItem |
 | **TestMultipleStopsAfterStart** | 24 | pkg/wach/wach_test.go, TestGetInstance, TestGetInstanceIsRunning |
+| **Wach.IsBatteryLow** | 19 | pkg/wach/wach.go, Config, DefaultConfig |
 | **systray_menu_item_selected** | 14 | lib/systray/systray_nonwindows.go, registerSystray, nativeLoop |
-| **init** | 10 | pkg/wach/wach.go, Config, DefaultConfig |
-| **state.setLastError** | 9 | pkg/wach/state.go, state, state.reset |
-| **ShowAbout** | 7 | pkg/wach/cgo_darwin.go, getIdleDuration, tryMoveMouse |
+| **state.resetStats** | 11 | pkg/wach/state.go, state, state.reset |
+| **OpenGitHub** | 10 | pkg/wach/cgo_darwin.go, getIdleDuration, tryMoveMouse |
+| **applyLoginLaunch** | 9 | cmd/main.go, main, onReady |
+| **SaveSettings** | 7 | pkg/wach/config.go, Settings, ActivityStats |
 | **TestIconsAreDifferent** | 5 | assets/icon/icon_test.go, TestIconOpenIsValidPNG, TestIconClosedIsValidPNG |
-| **onExit** | 4 | cmd/main.go, main, onReady |
 | **MenuItem.SetTemplateIcon** | 4 | lib/systray/systray_darwin.go, SetTemplateIcon, MenuItem.SetIcon |
 | **MenuItem.SetTemplateIcon** | 4 | lib/systray/systray_linux.go, SetTemplateIcon, MenuItem.SetIcon |
 | **onReady** | 3 | lib/systray/example/main.go, main, onReady |
@@ -51,6 +52,7 @@ The graph was partitioned into these subsystems:
 | **showWebview** | 3 | lib/systray/webview_example/webview_nonwindows.go, configureWebview, showWebview |
 | **showWebview** | 3 | lib/systray/webview_example/webview_windows.go, configureWebview, showWebview |
 | **init** | 3 | pkg/wach/logger.go, newLogger, init |
+| **GetLocale** | 3 | pkg/wach/locale.go, Locale, GetLocale |
 | **assets/icon/icon.go** | 1 | assets/icon/icon.go |
 | **lib/systray/example/icon/iconunix.go** | 1 | lib/systray/example/icon/iconunix.go |
 | **lib/systray/example/icon/iconwin.go** | 1 | lib/systray/example/icon/iconwin.go |
@@ -58,6 +60,7 @@ The graph was partitioned into these subsystems:
 | **lib/systray/systray_linux_appindicator.go** | 1 | lib/systray/systray_linux_appindicator.go |
 | **lib/systray/systray_linux_ayatana.go** | 1 | lib/systray/systray_linux_ayatana.go |
 | **pkg/wach/doc.go** | 1 | pkg/wach/doc.go |
+| **pkg/wach/translations.go** | 1 | pkg/wach/translations.go |
 
 ## Suggested Questions
 

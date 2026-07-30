@@ -26,7 +26,7 @@ var locales = map[string]Locale{
 		AboutMsg:    "Version %s\n\nA mouse mover for macOS (Apple Silicon).\nKeeps your Mac awake by moving the mouse when idle.\n\n(c) %s\n%s",
 		AboutAuthor: "Patrick Weppelmann", AboutSource: "github.com/Smotherer007/wach",
 		ErrNoPermissionTitle: "Accessibility Permission Required",
-		ErrNoPermissionMsg:   "Could not move mouse (attempt %d/%d)\nGrant accessibility permission:\nSystem Settings > Privacy > Accessibility > Wach",
+		ErrNoPermissionMsg:   "Could not move mouse (attempt %d of %d)\n\nGrant accessibility permission:\nSystem Settings > Privacy & Security > Accessibility > Wach\n\nClick \"Settings\" to open the pane directly.",
 	},
 
 	"de": {
@@ -50,8 +50,8 @@ var locales = map[string]Locale{
 		AboutTitle: "Ueber Wach",
 		AboutMsg:    "Version %s\n\nEin Mausbeweger fuer macOS (Apple Silicon).\nHaelt den Mac wach durch Mausbewegung bei Inaktivitaet.\n\n(c) %s\n%s",
 		AboutAuthor: "Patrick Weppelmann", AboutSource: "github.com/Smotherer007/wach",
-		ErrNoPermissionTitle: "Zugaenglichkeit erforderlich",
-		ErrNoPermissionMsg:   "Maus konnte nicht bewegt werden (Versuch %d/%d)\nBitte Zugaenglichkeit erlauben:\nSystemeinstellungen > Datenschutz > Bedienungshilfen > Wach",
+		ErrNoPermissionTitle: "Zugänglichkeit erforderlich",
+		ErrNoPermissionMsg:   "Maus konnte nicht bewegt werden (Versuch %d von %d)\n\nBitte Zugänglichkeit erlauben:\nSystemeinstellungen > Datenschutz & Sicherheit > Bedienungshilfen > Wach\n\nKlicke auf \"Einstellungen öffnen\" um direkt zur Stelle zu gelangen.",
 	},
 
 	"fr": {

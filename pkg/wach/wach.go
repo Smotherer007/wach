@@ -264,13 +264,27 @@ func (w *Wach) run() {
 			} else {
 				errCount++
 				l := w.locale
+
+				// Check if accessibility permission is actually granted
+				hasPermission := HasAccessibilityPermission()
+				if !hasPermission {
+					logger.Warn("accessibility-permission nicht erteilt (AXIsProcessTrusted=false)")
+				}
+
 				msg := fmt.Sprintf(l.ErrNoPermissionMsg, errCount, ErrorAlertThreshold)
 				logger.Warn(msg)
 
 				if errCount >= ErrorAlertThreshold {
 					lastErr := w.state.getLastErrorTime()
 					if time.Since(lastErr) > ErrorAlertCooldown {
-						showAlert(l.ErrNoPermissionTitle, msg)
+						// Open Accessibility settings directly
+						OpenAccessibilitySettings()
+
+						// Show alert with "Open Settings" button
+						if showAlertWithSettingsLink(l.ErrNoPermissionTitle, msg) {
+							OpenAccessibilitySettings()
+						}
+
 						w.state.setLastError(time.Now())
 					}
 					errCount = 0

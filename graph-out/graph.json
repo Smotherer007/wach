@@ -13,7 +13,7 @@
       "label": "assets/icon/icon_test.go",
       "type": "file",
       "sourceFile": "assets/icon/icon_test.go",
-      "centrality": 0.014,
+      "centrality": 0.012,
       "community": 2
     },
     {
@@ -22,7 +22,7 @@
       "type": "function",
       "sourceFile": "assets/icon/icon_test.go",
       "sourceLocation": "L11",
-      "centrality": 0.004,
+      "centrality": 0.003,
       "community": 2
     },
     {
@@ -31,7 +31,7 @@
       "type": "function",
       "sourceFile": "assets/icon/icon_test.go",
       "sourceLocation": "L20",
-      "centrality": 0.004,
+      "centrality": 0.003,
       "community": 2
     },
     {
@@ -40,7 +40,7 @@
       "type": "function",
       "sourceFile": "assets/icon/icon_test.go",
       "sourceLocation": "L29",
-      "centrality": 0.004,
+      "centrality": 0.003,
       "community": 2
     },
     {
@@ -49,7 +49,7 @@
       "type": "function",
       "sourceFile": "assets/icon/icon_test.go",
       "sourceLocation": "L42",
-      "centrality": 0.004,
+      "centrality": 0.003,
       "community": 2
     },
     {
@@ -57,7 +57,7 @@
       "label": "cmd/main.go",
       "type": "file",
       "sourceFile": "cmd/main.go",
-      "centrality": 0.011,
+      "centrality": 0.012,
       "community": 7
     },
     {
@@ -66,7 +66,7 @@
       "type": "function",
       "sourceFile": "cmd/main.go",
       "sourceLocation": "L10",
-      "centrality": 0.004,
+      "centrality": 0.002,
       "community": 7
     },
     {
@@ -75,7 +75,7 @@
       "type": "function",
       "sourceFile": "cmd/main.go",
       "sourceLocation": "L14",
-      "centrality": 0.004,
+      "centrality": 0.008,
       "community": 7
     },
     {
@@ -84,7 +84,7 @@
       "type": "function",
       "sourceFile": "cmd/main.go",
       "sourceLocation": "L66",
-      "centrality": 0.004,
+      "centrality": 0.002,
       "community": 7
     },
     {
@@ -116,7 +116,7 @@
       "label": "lib/systray/example/main.go",
       "type": "file",
       "sourceFile": "lib/systray/example/main.go",
-      "centrality": 0.008,
+      "centrality": 0.007,
       "community": 14
     },
     {
@@ -142,7 +142,7 @@
       "label": "lib/systray/systray.go",
       "type": "file",
       "sourceFile": "lib/systray/systray.go",
-      "centrality": 0.06,
+      "centrality": 0.051,
       "community": 17
     },
     {
@@ -178,7 +178,7 @@
       "type": "function",
       "sourceFile": "lib/systray/systray.go",
       "sourceLocation": "L61",
-      "centrality": 0.007,
+      "centrality": 0.006,
       "community": 17
     },
     {
@@ -187,7 +187,7 @@
       "type": "function",
       "sourceFile": "lib/systray/systray.go",
       "sourceLocation": "L76",
-      "centrality": 0.005,
+      "centrality": 0.004,
       "community": 17
     },
     {
@@ -196,7 +196,7 @@
       "type": "function",
       "sourceFile": "lib/systray/systray.go",
       "sourceLocation": "L86",
-      "centrality": 0.005,
+      "centrality": 0.004,
       "community": 17
     },
     {
@@ -214,7 +214,7 @@
       "type": "function",
       "sourceFile": "lib/systray/systray.go",
       "sourceLocation": "L117",
-      "centrality": 0.005,
+      "centrality": 0.004,
       "community": 17
     },
     {
@@ -223,7 +223,7 @@
       "type": "function",
       "sourceFile": "lib/systray/systray.go",
       "sourceLocation": "L126",
-      "centrality": 0.005,
+      "centrality": 0.004,
       "community": 17
     },
     {
@@ -366,7 +366,7 @@
       "label": "lib/systray/systray_darwin.go",
       "type": "file",
       "sourceFile": "lib/systray/systray_darwin.go",
-      "centrality": 0.011,
+      "centrality": 0.009,
       "community": 42
     },
     {
@@ -375,7 +375,7 @@
       "type": "function",
       "sourceFile": "lib/systray/systray_darwin.go",
       "sourceLocation": "L19",
-      "centrality": 0.004,
+      "centrality": 0.003,
       "community": 42
     },
     {
@@ -384,7 +384,7 @@
       "type": "method",
       "sourceFile": "lib/systray/systray_darwin.go",
       "sourceLocation": "L26",
-      "centrality": 0.004,
+      "centrality": 0.003,
       "community": 42
     },
     {
@@ -393,7 +393,7 @@
       "type": "method",
       "sourceFile": "lib/systray/systray_darwin.go",
       "sourceLocation": "L35",
-      "centrality": 0.004,
+      "centrality": 0.003,
       "community": 42
     },
     {
@@ -401,7 +401,7 @@
       "label": "lib/systray/systray_linux.go",
       "type": "file",
       "sourceFile": "lib/systray/systray_linux.go",
-      "centrality": 0.011,
+      "centrality": 0.009,
       "community": 46
     },
     {
@@ -410,7 +410,7 @@
       "type": "function",
       "sourceFile": "lib/systray/systray_linux.go",
       "sourceLocation": "L7",
-      "centrality": 0.004,
+      "centrality": 0.003,
       "community": 46
     },
     {
@@ -419,7 +419,7 @@
       "type": "method",
       "sourceFile": "lib/systray/systray_linux.go",
       "sourceLocation": "L13",
-      "centrality": 0.004,
+      "centrality": 0.003,
       "community": 46
     },
     {
@@ -428,7 +428,7 @@
       "type": "method",
       "sourceFile": "lib/systray/systray_linux.go",
       "sourceLocation": "L20",
-      "centrality": 0.004,
+      "centrality": 0.003,
       "community": 46
     },
     {
@@ -452,7 +452,7 @@
       "label": "lib/systray/systray_nonwindows.go",
       "type": "file",
       "sourceFile": "lib/systray/systray_nonwindows.go",
-      "centrality": 0.038,
+      "centrality": 0.032,
       "community": 52
     },
     {
@@ -577,7 +577,7 @@
       "label": "lib/systray/systray_windows.go",
       "type": "file",
       "sourceFile": "lib/systray/systray_windows.go",
-      "centrality": 0.103,
+      "centrality": 0.088,
       "community": 66
     },
     {
@@ -838,7 +838,7 @@
       "type": "function",
       "sourceFile": "lib/systray/systray_windows.go",
       "sourceLocation": "L822",
-      "centrality": 0.005,
+      "centrality": 0.004,
       "community": 66
     },
     {
@@ -847,7 +847,7 @@
       "type": "function",
       "sourceFile": "lib/systray/systray_windows.go",
       "sourceLocation": "L838",
-      "centrality": 0.007,
+      "centrality": 0.006,
       "community": 66
     },
     {
@@ -856,7 +856,7 @@
       "type": "function",
       "sourceFile": "lib/systray/systray_windows.go",
       "sourceLocation": "L854",
-      "centrality": 0.005,
+      "centrality": 0.004,
       "community": 66
     },
     {
@@ -945,7 +945,7 @@
       "label": "lib/systray/systray_windows_test.go",
       "type": "file",
       "sourceFile": "lib/systray/systray_windows_test.go",
-      "centrality": 0.008,
+      "centrality": 0.007,
       "community": 107
     },
     {
@@ -971,7 +971,7 @@
       "label": "lib/systray/webview_example/main.go",
       "type": "file",
       "sourceFile": "lib/systray/webview_example/main.go",
-      "centrality": 0.008,
+      "centrality": 0.007,
       "community": 110
     },
     {
@@ -997,7 +997,7 @@
       "label": "lib/systray/webview_example/webview_nonwindows.go",
       "type": "file",
       "sourceFile": "lib/systray/webview_example/webview_nonwindows.go",
-      "centrality": 0.008,
+      "centrality": 0.007,
       "community": 113
     },
     {
@@ -1023,7 +1023,7 @@
       "label": "lib/systray/webview_example/webview_windows.go",
       "type": "file",
       "sourceFile": "lib/systray/webview_example/webview_windows.go",
-      "centrality": 0.008,
+      "centrality": 0.007,
       "community": 116
     },
     {
@@ -1049,7 +1049,7 @@
       "label": "pkg/wach/cgo_darwin.go",
       "type": "file",
       "sourceFile": "pkg/wach/cgo_darwin.go",
-      "centrality": 0.017,
+      "centrality": 0.021,
       "community": 119
     },
     {
@@ -1085,7 +1085,7 @@
       "type": "function",
       "sourceFile": "pkg/wach/cgo_darwin.go",
       "sourceLocation": "L88",
-      "centrality": 0.006,
+      "centrality": 0.005,
       "community": 119
     },
     {
@@ -1103,7 +1103,7 @@
       "type": "function",
       "sourceFile": "pkg/wach/cgo_darwin.go",
       "sourceLocation": "L102",
-      "centrality": 0.006,
+      "centrality": 0.005,
       "community": 119
     },
     {
@@ -1119,7 +1119,7 @@
       "label": "pkg/wach/logger.go",
       "type": "file",
       "sourceFile": "pkg/wach/logger.go",
-      "centrality": 0.008,
+      "centrality": 0.007,
       "community": 127
     },
     {
@@ -1225,7 +1225,7 @@
       "label": "pkg/wach/wach.go",
       "type": "file",
       "sourceFile": "pkg/wach/wach.go",
-      "centrality": 0.025,
+      "centrality": 0.041,
       "community": 139
     },
     {
@@ -1243,7 +1243,7 @@
       "type": "function",
       "sourceFile": "pkg/wach/wach.go",
       "sourceLocation": "L47",
-      "centrality": 0.006,
+      "centrality": 0.005,
       "community": 139
     },
     {
@@ -1306,7 +1306,7 @@
       "type": "function",
       "sourceFile": "pkg/wach/wach.go",
       "sourceLocation": "L191",
-      "centrality": 0.006,
+      "centrality": 0.005,
       "community": 139
     },
     {
@@ -1314,7 +1314,7 @@
       "label": "pkg/wach/wach_test.go",
       "type": "file",
       "sourceFile": "pkg/wach/wach_test.go",
-      "centrality": 0.065,
+      "centrality": 0.055,
       "community": 149
     },
     {
@@ -1523,6 +1523,273 @@
       "sourceLocation": "L311",
       "centrality": 0.003,
       "community": 149
+    },
+    {
+      "id": "cmd_main_markIdle",
+      "label": "markIdle",
+      "type": "function",
+      "sourceFile": "cmd/main.go",
+      "sourceLocation": "L36",
+      "centrality": 0.004,
+      "community": 7
+    },
+    {
+      "id": "cmd_main_markMove",
+      "label": "markMove",
+      "type": "function",
+      "sourceFile": "cmd/main.go",
+      "sourceLocation": "L52",
+      "centrality": 0.004,
+      "community": 7
+    },
+    {
+      "id": "cmd_main_updateMenuFromSettings",
+      "label": "updateMenuFromSettings",
+      "type": "function",
+      "sourceFile": "cmd/main.go",
+      "sourceLocation": "L68",
+      "centrality": 0.006,
+      "community": 7
+    },
+    {
+      "id": "cmd_main_statusLoop",
+      "label": "statusLoop",
+      "type": "function",
+      "sourceFile": "cmd/main.go",
+      "sourceLocation": "L93",
+      "centrality": 0.003,
+      "community": 7
+    },
+    {
+      "id": "cmd_main_applyLoginLaunch",
+      "label": "applyLoginLaunch",
+      "type": "function",
+      "sourceFile": "cmd/main.go",
+      "sourceLocation": "L112",
+      "centrality": 0.003,
+      "community": 7
+    },
+    {
+      "id": "pkg_wach_cgo_darwin_getBatteryPercent",
+      "label": "getBatteryPercent",
+      "type": "function",
+      "sourceFile": "pkg/wach/cgo_darwin.go",
+      "sourceLocation": "L114",
+      "centrality": 0.003,
+      "community": 119
+    },
+    {
+      "id": "pkg_wach_cgo_darwin_SystemLanguage",
+      "label": "SystemLanguage",
+      "type": "function",
+      "sourceFile": "pkg/wach/cgo_darwin.go",
+      "sourceLocation": "L123",
+      "centrality": 0.003,
+      "community": 119
+    },
+    {
+      "id": "pkg_wach_cgo_darwin_OpenGitHub",
+      "label": "OpenGitHub",
+      "type": "function",
+      "sourceFile": "pkg/wach/cgo_darwin.go",
+      "sourceLocation": "L138",
+      "centrality": 0.003,
+      "community": 119
+    },
+    {
+      "id": "pkg_wach_config_file",
+      "label": "pkg/wach/config.go",
+      "type": "file",
+      "sourceFile": "pkg/wach/config.go",
+      "centrality": 0.014,
+      "community": 181
+    },
+    {
+      "id": "pkg_wach_config_Settings",
+      "label": "Settings",
+      "type": "struct",
+      "sourceFile": "pkg/wach/config.go",
+      "sourceLocation": "L11",
+      "centrality": 0.003,
+      "community": 181
+    },
+    {
+      "id": "pkg_wach_config_ActivityStats",
+      "label": "ActivityStats",
+      "type": "struct",
+      "sourceFile": "pkg/wach/config.go",
+      "sourceLocation": "L24",
+      "centrality": 0.003,
+      "community": 181
+    },
+    {
+      "id": "pkg_wach_config_DefaultSettings",
+      "label": "DefaultSettings",
+      "type": "function",
+      "sourceFile": "pkg/wach/config.go",
+      "sourceLocation": "L32",
+      "centrality": 0.005,
+      "community": 181
+    },
+    {
+      "id": "pkg_wach_config_init",
+      "label": "init",
+      "type": "function",
+      "sourceFile": "pkg/wach/config.go",
+      "sourceLocation": "L43",
+      "centrality": 0.003,
+      "community": 181
+    },
+    {
+      "id": "pkg_wach_config_LoadSettings",
+      "label": "LoadSettings",
+      "type": "function",
+      "sourceFile": "pkg/wach/config.go",
+      "sourceLocation": "L53",
+      "centrality": 0.005,
+      "community": 181
+    },
+    {
+      "id": "pkg_wach_config_SaveSettings",
+      "label": "SaveSettings",
+      "type": "function",
+      "sourceFile": "pkg/wach/config.go",
+      "sourceLocation": "L74",
+      "centrality": 0.003,
+      "community": 181
+    },
+    {
+      "id": "pkg_wach_locale_file",
+      "label": "pkg/wach/locale.go",
+      "type": "file",
+      "sourceFile": "pkg/wach/locale.go",
+      "centrality": 0.007,
+      "community": 188
+    },
+    {
+      "id": "pkg_wach_locale_Locale",
+      "label": "Locale",
+      "type": "struct",
+      "sourceFile": "pkg/wach/locale.go",
+      "sourceLocation": "L4",
+      "centrality": 0.004,
+      "community": 188
+    },
+    {
+      "id": "pkg_wach_locale_GetLocale",
+      "label": "GetLocale",
+      "type": "function",
+      "sourceFile": "pkg/wach/locale.go",
+      "sourceLocation": "L60",
+      "centrality": 0.004,
+      "community": 188
+    },
+    {
+      "id": "pkg_wach_state_state_getStats",
+      "label": "state.getStats",
+      "type": "method",
+      "sourceFile": "pkg/wach/state.go",
+      "sourceLocation": "L77",
+      "centrality": 0.003,
+      "community": 130
+    },
+    {
+      "id": "pkg_wach_state_state_resetStats",
+      "label": "state.resetStats",
+      "type": "method",
+      "sourceFile": "pkg/wach/state.go",
+      "sourceLocation": "L83",
+      "centrality": 0.003,
+      "community": 130
+    },
+    {
+      "id": "pkg_wach_translations_file",
+      "label": "pkg/wach/translations.go",
+      "type": "file",
+      "sourceFile": "pkg/wach/translations.go",
+      "centrality": 0.001,
+      "community": 192
+    },
+    {
+      "id": "pkg_wach_wach_Wach_applySettings",
+      "label": "Wach.applySettings",
+      "type": "method",
+      "sourceFile": "pkg/wach/wach.go",
+      "sourceLocation": "L72",
+      "centrality": 0.003,
+      "community": 139
+    },
+    {
+      "id": "pkg_wach_wach_Wach_GetSettings",
+      "label": "Wach.GetSettings",
+      "type": "method",
+      "sourceFile": "pkg/wach/wach.go",
+      "sourceLocation": "L108",
+      "centrality": 0.003,
+      "community": 139
+    },
+    {
+      "id": "pkg_wach_wach_Wach_UpdateSettings",
+      "label": "Wach.UpdateSettings",
+      "type": "method",
+      "sourceFile": "pkg/wach/wach.go",
+      "sourceLocation": "L113",
+      "centrality": 0.003,
+      "community": 139
+    },
+    {
+      "id": "pkg_wach_wach_Wach_GetLocale",
+      "label": "Wach.GetLocale",
+      "type": "method",
+      "sourceFile": "pkg/wach/wach.go",
+      "sourceLocation": "L122",
+      "centrality": 0.003,
+      "community": 139
+    },
+    {
+      "id": "pkg_wach_wach_Wach_GetStats",
+      "label": "Wach.GetStats",
+      "type": "method",
+      "sourceFile": "pkg/wach/wach.go",
+      "sourceLocation": "L127",
+      "centrality": 0.003,
+      "community": 139
+    },
+    {
+      "id": "pkg_wach_wach_Wach_ResetStats",
+      "label": "Wach.ResetStats",
+      "type": "method",
+      "sourceFile": "pkg/wach/wach.go",
+      "sourceLocation": "L132",
+      "centrality": 0.003,
+      "community": 139
+    },
+    {
+      "id": "pkg_wach_wach_Wach_StatusText",
+      "label": "Wach.StatusText",
+      "type": "method",
+      "sourceFile": "pkg/wach/wach.go",
+      "sourceLocation": "L137",
+      "centrality": 0.003,
+      "community": 139
+    },
+    {
+      "id": "pkg_wach_wach_Wach_IsWithinSchedule",
+      "label": "Wach.IsWithinSchedule",
+      "type": "method",
+      "sourceFile": "pkg/wach/wach.go",
+      "sourceLocation": "L154",
+      "centrality": 0.003,
+      "community": 139
+    },
+    {
+      "id": "pkg_wach_wach_Wach_IsBatteryLow",
+      "label": "Wach.IsBatteryLow",
+      "type": "method",
+      "sourceFile": "pkg/wach/wach.go",
+      "sourceLocation": "L185",
+      "centrality": 0.003,
+      "community": 139
     }
   ],
   "edges": [
@@ -2331,6 +2598,1204 @@
       "relation": "calls",
       "confidence": "INFERRED",
       "confidenceScore": 0.85
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestGetInstance",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestGetInstanceIsRunning",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestDefaultConfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestConfigCustomValues",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestStartStop",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestStartStopMultipleCycles",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestStartWithNilQuitChannel",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestStopOnNilWach",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestStateLifecycle",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestStateLastMovedUpdates",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestStateLastErrorUpdates",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestStateConcurrentReadWrite",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestStateResetDuringRead",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestConcurrentStartStop",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestIdleDuration",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestDisplaySleep",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestIsDarkMode",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestAppMetadata",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestConstants",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestStateResetIdempotent",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestConfigZeroValues",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestIsRunningOnFreshInstance",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_test_file",
+      "target": "pkg_wach_wach_test_TestMultipleStopsAfterStart",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "assets_icon_icon_test_file",
+      "target": "assets_icon_icon_test_TestIconOpenIsValidPNG",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "assets_icon_icon_test_file",
+      "target": "assets_icon_icon_test_TestIconClosedIsValidPNG",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "assets_icon_icon_test_file",
+      "target": "assets_icon_icon_test_TestIconSizes",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "assets_icon_icon_test_file",
+      "target": "assets_icon_icon_test_TestIconsAreDifferent",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "cmd_main_file",
+      "target": "cmd_main_markIdle",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "cmd_main_file",
+      "target": "cmd_main_markMove",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "cmd_main_file",
+      "target": "cmd_main_updateMenuFromSettings",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "cmd_main_updateMenuFromSettings",
+      "target": "cmd_main_markIdle",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "cmd_main_updateMenuFromSettings",
+      "target": "cmd_main_markMove",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "cmd_main_file",
+      "target": "cmd_main_statusLoop",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "cmd_main_file",
+      "target": "cmd_main_applyLoginLaunch",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "cmd_main_file",
+      "target": "cmd_main_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "cmd_main_file",
+      "target": "cmd_main_onReady",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "cmd_main_onReady",
+      "target": "cmd_main_updateMenuFromSettings",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "cmd_main_onReady",
+      "target": "cmd_main_applyLoginLaunch",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "cmd_main_onReady",
+      "target": "cmd_main_statusLoop",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "cmd_main_onReady",
+      "target": "cmd_main_markIdle",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "cmd_main_onReady",
+      "target": "cmd_main_markIdle",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "cmd_main_onReady",
+      "target": "cmd_main_markIdle",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "cmd_main_onReady",
+      "target": "cmd_main_markIdle",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "cmd_main_onReady",
+      "target": "cmd_main_markMove",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "cmd_main_onReady",
+      "target": "cmd_main_markMove",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "cmd_main_onReady",
+      "target": "cmd_main_markMove",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "cmd_main_onReady",
+      "target": "cmd_main_markMove",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "cmd_main_onReady",
+      "target": "cmd_main_applyLoginLaunch",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "cmd_main_file",
+      "target": "cmd_main_onExit",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_example_main_file",
+      "target": "lib_systray_example_main_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_example_main_file",
+      "target": "lib_systray_example_main_onReady",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_init",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_MenuItem",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_MenuItem_String",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_newMenuItem",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_Run",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_Run",
+      "target": "lib_systray_systray_Register",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_Register",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_Quit",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_AddMenuItem",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_AddMenuItem",
+      "target": "lib_systray_systray_newMenuItem",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_AddMenuItemCheckbox",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_AddMenuItemCheckbox",
+      "target": "lib_systray_systray_newMenuItem",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_AddSeparator",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_MenuItem_AddSubMenuItem",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_MenuItem_AddSubMenuItemCheckbox",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_MenuItem_SetTitle",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_MenuItem_SetTooltip",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_MenuItem_Disabled",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_MenuItem_Enable",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_MenuItem_Disable",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_MenuItem_Hide",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_MenuItem_Show",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_MenuItem_Checked",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_MenuItem_Check",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_MenuItem_Uncheck",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_MenuItem_update",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_file",
+      "target": "lib_systray_systray_systrayMenuItemSelected",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_darwin_file",
+      "target": "lib_systray_systray_darwin_SetTemplateIcon",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_darwin_file",
+      "target": "lib_systray_systray_darwin_MenuItem_SetIcon",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_darwin_file",
+      "target": "lib_systray_systray_darwin_MenuItem_SetTemplateIcon",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_linux_file",
+      "target": "lib_systray_systray_linux_SetTemplateIcon",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_linux_file",
+      "target": "lib_systray_systray_linux_MenuItem_SetIcon",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_linux_file",
+      "target": "lib_systray_systray_linux_MenuItem_SetTemplateIcon",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_nonwindows_file",
+      "target": "lib_systray_systray_nonwindows_registerSystray",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_nonwindows_file",
+      "target": "lib_systray_systray_nonwindows_nativeLoop",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_nonwindows_file",
+      "target": "lib_systray_systray_nonwindows_quit",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_nonwindows_file",
+      "target": "lib_systray_systray_nonwindows_SetIcon",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_nonwindows_file",
+      "target": "lib_systray_systray_nonwindows_SetTitle",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_nonwindows_file",
+      "target": "lib_systray_systray_nonwindows_SetTooltip",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_nonwindows_file",
+      "target": "lib_systray_systray_nonwindows_addOrUpdateMenuItem",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_nonwindows_file",
+      "target": "lib_systray_systray_nonwindows_addSeparator",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_nonwindows_file",
+      "target": "lib_systray_systray_nonwindows_hideMenuItem",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_nonwindows_file",
+      "target": "lib_systray_systray_nonwindows_showMenuItem",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_nonwindows_file",
+      "target": "lib_systray_systray_nonwindows_systray_ready",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_nonwindows_file",
+      "target": "lib_systray_systray_nonwindows_systray_on_exit",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_nonwindows_file",
+      "target": "lib_systray_systray_nonwindows_systray_menu_item_selected",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_wndClassEx",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_wndClassEx_register",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_wndClassEx_unregister",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_notifyIconData",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_notifyIconData_add",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_notifyIconData_modify",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_notifyIconData_delete",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_menuItemInfo",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_point",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray_setIcon",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray_setTooltip",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray_wndProc",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray_initInstance",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray_createMenu",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray_convertToSubMenu",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray_addOrUpdateMenuItem",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray_addSeparatorMenuItem",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray_hideMenuItem",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray_showMenu",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray_delFromVisibleItems",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray_addToVisibleItems",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray_getVisibleItemIndex",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray_loadIconFrom",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_winTray_iconToBitmap",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_registerSystray",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_nativeLoop",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_quit",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_iconBytesToFilePath",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_SetIcon",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_SetIcon",
+      "target": "lib_systray_systray_windows_iconBytesToFilePath",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_SetTemplateIcon",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_SetTemplateIcon",
+      "target": "lib_systray_systray_windows_SetIcon",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_SetTitle",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_MenuItem_parentId",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_MenuItem_SetIcon",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_SetTooltip",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_addOrUpdateMenuItem",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_MenuItem_SetTemplateIcon",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_addSeparator",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_hideMenuItem",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_file",
+      "target": "lib_systray_systray_windows_showMenuItem",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_showMenuItem",
+      "target": "lib_systray_systray_windows_addOrUpdateMenuItem",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "lib_systray_systray_windows_test_file",
+      "target": "lib_systray_systray_windows_test_TestBaseWindowsTray",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_systray_windows_test_file",
+      "target": "lib_systray_systray_windows_test_TestWindowsRun",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_webview_example_main_file",
+      "target": "lib_systray_webview_example_main_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_webview_example_main_file",
+      "target": "lib_systray_webview_example_main_onReady",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_webview_example_webview_nonwindows_file",
+      "target": "lib_systray_webview_example_webview_nonwindows_configureWebview",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_webview_example_webview_nonwindows_file",
+      "target": "lib_systray_webview_example_webview_nonwindows_showWebview",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_webview_example_webview_windows_file",
+      "target": "lib_systray_webview_example_webview_windows_configureWebview",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "lib_systray_webview_example_webview_windows_file",
+      "target": "lib_systray_webview_example_webview_windows_showWebview",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_cgo_darwin_file",
+      "target": "pkg_wach_cgo_darwin_getIdleDuration",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_cgo_darwin_file",
+      "target": "pkg_wach_cgo_darwin_tryMoveMouse",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_cgo_darwin_file",
+      "target": "pkg_wach_cgo_darwin_isDisplayAsleep",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_cgo_darwin_file",
+      "target": "pkg_wach_cgo_darwin_getBatteryPercent",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_cgo_darwin_file",
+      "target": "pkg_wach_cgo_darwin_IsDarkMode",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_cgo_darwin_file",
+      "target": "pkg_wach_cgo_darwin_SystemLanguage",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_cgo_darwin_file",
+      "target": "pkg_wach_cgo_darwin_showAlert",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_cgo_darwin_file",
+      "target": "pkg_wach_cgo_darwin_OpenGitHub",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_cgo_darwin_file",
+      "target": "pkg_wach_cgo_darwin_ShowAbout",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_cgo_darwin_ShowAbout",
+      "target": "pkg_wach_cgo_darwin_showAlert",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "pkg_wach_config_file",
+      "target": "pkg_wach_config_Settings",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_config_file",
+      "target": "pkg_wach_config_ActivityStats",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_config_file",
+      "target": "pkg_wach_config_DefaultSettings",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_config_file",
+      "target": "pkg_wach_config_init",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_config_file",
+      "target": "pkg_wach_config_LoadSettings",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_config_LoadSettings",
+      "target": "pkg_wach_config_DefaultSettings",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidenceScore": 0.85
+    },
+    {
+      "source": "pkg_wach_config_file",
+      "target": "pkg_wach_config_SaveSettings",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_locale_file",
+      "target": "pkg_wach_locale_Locale",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_locale_file",
+      "target": "pkg_wach_locale_GetLocale",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_logger_file",
+      "target": "pkg_wach_logger_newLogger",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_logger_file",
+      "target": "pkg_wach_logger_init",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_state_file",
+      "target": "pkg_wach_state_state",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_state_file",
+      "target": "pkg_wach_state_state_reset",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_state_file",
+      "target": "pkg_wach_state_state_isRunning",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_state_file",
+      "target": "pkg_wach_state_state_setRunning",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_state_file",
+      "target": "pkg_wach_state_state_getLastMoved",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_state_file",
+      "target": "pkg_wach_state_state_setLastMoved",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_state_file",
+      "target": "pkg_wach_state_state_getLastErrorTime",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_state_file",
+      "target": "pkg_wach_state_state_setLastError",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_state_file",
+      "target": "pkg_wach_state_state_getStats",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_state_file",
+      "target": "pkg_wach_state_state_resetStats",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_Config",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_Wach",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_GetInstance",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_Wach_Start",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_Wach_applySettings",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_Wach_Stop",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_Wach_IsRunning",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_Wach_GetSettings",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_Wach_UpdateSettings",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_Wach_GetLocale",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_Wach_GetStats",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_Wach_ResetStats",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_Wach_StatusText",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_Wach_IsWithinSchedule",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_Wach_IsBatteryLow",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_Wach_run",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
+    },
+    {
+      "source": "pkg_wach_wach_file",
+      "target": "pkg_wach_wach_init",
+      "relation": "contains",
+      "confidence": "EXTRACTED"
     },
     {
       "source": "pkg_wach_wach_test_file",

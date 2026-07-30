@@ -1,7 +1,7 @@
 package wach
 
 /*
-#cgo LDFLAGS: -framework CoreGraphics -framework Cocoa -framework IOKit
+#cgo LDFLAGS: -framework CoreGraphics -framework Cocoa -framework IOKit -framework ApplicationServices
 
 #include <CoreGraphics/CoreGraphics.h>
 #include <IOKit/ps/IOPowerSources.h>
@@ -83,8 +83,11 @@ int getBatteryPercent() {
 
 // ObjC functions implemented in alert_darwin.m
 void showAlert(const char* title, const char* msg);
+int showAlertWithSettingsLink(const char* title, const char* msg);
 int isDarkMode();
 void openURL(const char* url);
+void openAccessibilitySettings();
+int hasAccessibilityPermission();
 const char* systemLanguage();
 
 // Create a power assertion to prevent idle sleep.
@@ -161,6 +164,29 @@ func showAlert(title, msg string) {
 	C.showAlert(cTitle, cMsg)
 	C.free(unsafe.Pointer(cTitle))
 	C.free(unsafe.Pointer(cMsg))
+}
+
+// showAlertWithSettingsLink shows an alert with an "Open Settings" button.
+// Returns true if the user clicked the settings button.
+func showAlertWithSettingsLink(title, msg string) bool {
+	cTitle := C.CString(title)
+	cMsg := C.CString(msg)
+	result := C.showAlertWithSettingsLink(cTitle, cMsg)
+	C.free(unsafe.Pointer(cTitle))
+	C.free(unsafe.Pointer(cMsg))
+	return result == 1
+}
+
+// HasAccessibilityPermission checks if the app has been granted
+// Accessibility permissions via AXIsProcessTrusted().
+func HasAccessibilityPermission() bool {
+	return C.hasAccessibilityPermission() == 1
+}
+
+// OpenAccessibilitySettings opens the Accessibility privacy pane
+// in System Settings (macOS Ventura+).
+func OpenAccessibilitySettings() {
+	C.openAccessibilitySettings()
 }
 
 // OpenGitHub opens the project page in the default browser.
